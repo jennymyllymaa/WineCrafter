@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Marjat
+  - Roska
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Background
+  - Water
+  - UI
+  - FallingObjects
+  - Canvas
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: BG
+    uniqueID: 2409594655
+    locked: 0
+  - name: FallingObjects
+    uniqueID: 4096439327
+    locked: 0
+  - name: Kori
+    uniqueID: 1079558925
+    locked: 0
+  - name: Canvas
+    uniqueID: 4258562449
+    locked: 0
