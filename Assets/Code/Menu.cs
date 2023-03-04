@@ -12,6 +12,11 @@ namespace WineCrafter
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
+        public void GoBack()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        }
+
         public void QuitGame()
         {
             Debug.Log("QUIT!");

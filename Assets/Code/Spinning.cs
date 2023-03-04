@@ -9,7 +9,7 @@ namespace WineCrafter
     {
 
         float reachposition = 0f;
-        float reachbackposition = 3f;
+        float reachbackposition = 15f;
 
         // Start is called before the first frame update
         void Start()
@@ -21,19 +21,19 @@ namespace WineCrafter
         void Update()
         {
 
-            if (reachposition <= 3f)
+            if (reachposition <= 15f)
             {
-                reachbackposition = 3f;
+                reachbackposition = 15f;
                 reachposition += 0.01f;
-                transform.Rotate(0f, 0f, 10f * Time.deltaTime, Space.Self);
+                transform.Rotate(0f, 0f, 5f * Time.deltaTime * 0.4f, Space.Self);
                 
             }
 
-            if (reachposition >= 3f)
+            if (reachposition >= 15f)
 
                 if (reachbackposition >= 0f)
                 {
-                    transform.Rotate(0f, 0f, -10f * Time.deltaTime, Space.Self);
+                    transform.Rotate(0f, 0f, -5f * Time.deltaTime * 0.4f, Space.Self);
                     reachbackposition = reachbackposition - 0.01f;
 
                     if (reachbackposition <= 0f)
