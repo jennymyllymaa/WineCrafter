@@ -7,19 +7,42 @@ namespace WineCrafter
 {
     public class ScoreManager : MonoBehaviour
     {
-        /*public Text scoreText;
+        public static ScoreManager instance;
+
+
+        public Text scoreText;
         int score = 0;
+
+        private void Awake()
+        {
+            instance = this;
+        }
 
         void Start()
         {
-            scoreText.text = score.ToString() + ;
+            scoreText.text = "Pisteet: " + score.ToString();
         }
 
 
-        void Update()
+        public void AddPoint ()
         {
+            score += 1;
+            scoreText.text = "Pisteet: " + score.ToString();
 
-        }*/
+        }
+
+        public void SubtractPoint()
+        {
+            score = score - 1; 
+            scoreText.text = "Pisteet: " + score.ToString();
+
+        }
+
+        public int GetScore()
+        {
+            return score;
+        }
+
     }
 }
 

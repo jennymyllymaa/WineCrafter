@@ -28,6 +28,8 @@ namespace WineCrafter
                 isTriggered = true;
                 Destroy(GameObject.FindWithTag("Marjat"));
                 points = points + 1;
+                ScoreManager.instance.AddPoint();
+
                 Debug.Log(points);
             }
 
@@ -36,6 +38,7 @@ namespace WineCrafter
                 isTriggered = true;
                 Destroy(GameObject.FindWithTag("Roska"));
                 points = points - 1;
+                ScoreManager.instance.SubtractPoint();
                 Debug.Log(points);
 
             }

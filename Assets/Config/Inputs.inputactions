@@ -1,0 +1,46 @@
+{
+    "name": "Inputs",
+    "maps": [
+        {
+            "name": "Game",
+            "id": "6bff1636-4df2-4d54-8373-6809f7061aba",
+            "actions": [
+                {
+                    "name": "TapMove",
+                    "type": "Value",
+                    "id": "83264c48-116a-461d-9174-132403184984",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "83155894-2c10-4acc-b803-373a3cb36da2",
+                    "path": "<Touchscreen>/primaryTouch/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Touch",
+                    "action": "TapMove",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Touch",
+            "bindingGroup": "Touch",
+            "devices": [
+                {
+                    "devicePath": "<Touchscreen>",
+                    "isOptional": true,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
