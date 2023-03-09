@@ -40,39 +40,8 @@ namespace WineCrafter
 
             }
         }
-
-
-        /* public void OnTabMove (InputAction.CallbackContext context)
-        {
-            if (context.phase == InputActionPhase.Performed)
-            {
-                Vector2 touchPosition = context.ReadValue<Vector2>();
-                 Vector3 screenCoordinate = new Vector3(touchPosition.x, touchPosition.y, 0);
-
-                // Vaihtoehtoinen tapa ilmaista ylempi rivi
-                Vector3 screenCoordinate = touchPosition;
-
-                this.worldTouchPosition = Camera.main.ScreenToWorldPoint(screenCoordinate);
-
-
-            }
-        }
-
-        public Vector2 GetMoveInput()
-        {
-            Vector2 toTarget = (Vector3)(worldTouchPosition - transform.position);
-
-            if (toTarget.magnitude > targetoffset)
-            {
-                //Kohde saavutettu
-                return Vector2.zero;
-            }
-
-            return toTarget.normalized;
-
-        } */
-
-
     }
 }
+
+
 

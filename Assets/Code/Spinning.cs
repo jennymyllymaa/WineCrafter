@@ -8,47 +8,24 @@ namespace WineCrafter
     public class Spinning : MonoBehaviour
     {
 
-        float reachposition = 0f;
-        float reachbackposition = 15f;
+        public float amplitude = 0.5f;  // the amount of sway
+        public float speed = 1f;        // the speed of the sway
+
+        private float initialAngle;
 
         // Start is called before the first frame update
         void Start()
         {
+
+            initialAngle = transform.eulerAngles.z;
 
         }
 
         // Update is called once per frame
         void Update()
         {
-
-            if (reachposition <= 15f)
-            {
-                reachbackposition = 15f;
-                reachposition += 0.01f;
-                transform.Rotate(0f, 0f, 5f * Time.deltaTime * 0.4f, Space.Self);
-                
-            }
-
-            if (reachposition >= 15f)
-
-                if (reachbackposition >= 0f)
-                {
-                    transform.Rotate(0f, 0f, -5f * Time.deltaTime * 0.4f, Space.Self);
-                    reachbackposition = reachbackposition - 0.01f;
-
-                    if (reachbackposition <= 0f)
-                    {
-                        reachposition = 0f;
-                        
-                    }
-
-                }
-            {
-
-                
-            }
-            
-            
+            float angle = initialAngle + amplitude * Mathf.Sin(speed * Time.time);
+            transform.rotation = Quaternion.Euler(0, 0, angle);
         }
     }
 }

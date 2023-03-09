@@ -8,11 +8,11 @@ namespace WineCrafter
     {
 
         [SerializeField] private GameObject[] fallingObjects;
-        /* [SerializeField] float secondSpawn = 0.5f; */
 
         private BoxCollider2D col;
 
         float x1, x2;
+
 
         // Start is called before the first frame update
         void Awake()
@@ -34,16 +34,17 @@ namespace WineCrafter
 
         IEnumerator Spawn(float time)
         {
-            yield return new WaitForSecondsRealtime(time);
+
+                yield return new WaitForSecondsRealtime(time);
 
 
 
-            Vector3 temp = transform.position;
-            temp.x = Random.Range(x1, x2);
+                Vector3 temp = transform.position;
+                temp.x = Random.Range(x1, x2);
 
-            Instantiate(fallingObjects[Random.Range(0, fallingObjects.Length)], temp, Quaternion.identity);
+                Instantiate(fallingObjects[Random.Range(0, fallingObjects.Length)], temp, Quaternion.identity);
 
-            StartCoroutine(Spawn(Random.Range(0.01f, 1.5f)));
+                StartCoroutine(Spawn(Random.Range(0.01f, 1.5f)));
 
         }
     }

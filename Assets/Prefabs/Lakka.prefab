@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4618486339890102015}
   - component: {fileID: 1981173198643862609}
   - component: {fileID: 597675936612194648}
+  - component: {fileID: 7237831896519886150}
   m_Layer: 0
   m_Name: Lakka
   m_TagString: Marjat
@@ -123,3 +124,17 @@ CapsuleCollider2D:
   m_Offset: {x: -0.19896467, y: 0.45916656}
   m_Size: {x: 4.3411555, y: 3.941832}
   m_Direction: 1
+--- !u!114 &7237831896519886150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385198866426117116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8b0f99014132eb428121fe2fb3e5a5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 360
+  speed: 0.1

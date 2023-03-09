@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 662612637984497379}
   - component: {fileID: 7300927182226536408}
   - component: {fileID: -411741544043291072}
+  - component: {fileID: 110095348589408108}
   m_Layer: 0
   m_Name: Lehti
   m_TagString: Roska
@@ -123,3 +124,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.38362792}
   serializedVersion: 2
   m_Radius: 2.2163723
+--- !u!114 &110095348589408108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7141136404175782131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8b0f99014132eb428121fe2fb3e5a5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 360
+  speed: 0.05

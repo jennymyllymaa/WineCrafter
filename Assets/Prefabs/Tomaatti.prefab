@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5416300520919713191}
   - component: {fileID: 1323296996331267978}
   - component: {fileID: 8924170236253434318}
+  - component: {fileID: -7496931442507106252}
   m_Layer: 0
   m_Name: Tomaatti
   m_TagString: Marjat
@@ -123,3 +124,17 @@ CapsuleCollider2D:
   m_Offset: {x: -0.049556952, y: 0.3536468}
   m_Size: {x: 4.338333, y: 2.343578}
   m_Direction: 1
+--- !u!114 &-7496931442507106252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8194338110025636195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8b0f99014132eb428121fe2fb3e5a5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 10
+  speed: 5
