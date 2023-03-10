@@ -44,7 +44,7 @@ public class Timer : MonoBehaviour
             if (spawner != null)
             {
                 Spawner spawnerComponent = spawner.GetComponent<Spawner>();
-                if (spawnerComponent != null)
+                if (spawnerComponent == null)
                 {
                     Debug.LogError($"{gameObject} is missing a component which it is dependant on!");
                 }

@@ -965,7 +965,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 1152136834}
-  currentTime: 30
+  currentTime: 10
   timerLimit: 0
   endOfGame: 0
 --- !u!4 &1408102948
