@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Marjat
   - Roska
+  - EmptyBottle
+  - FullBottle
   layers:
   - Default
   - TransparentFX

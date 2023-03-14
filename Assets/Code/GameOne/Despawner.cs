@@ -38,7 +38,7 @@ namespace WineCrafter
 
         public bool IsTriggered() 
         { 
-            return isTriggered; 
+            return isTriggered;
         }
     }
 }
