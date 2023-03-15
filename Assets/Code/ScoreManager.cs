@@ -20,21 +20,21 @@ namespace WineCrafter
 
         void Start()
         {
-            scoreText.text = "Pisteet: " + score.ToString();
+            scoreText.text = "x " + score.ToString();
         }
 
 
         public void AddPoint ()
         {
             score += 1;
-            scoreText.text = "Pisteet: " + score.ToString();
+            scoreText.text = "x " + score.ToString();
 
         }
 
         public void SubtractPoint()
         {
             score = score - 1; 
-            scoreText.text = "Pisteet: " + score.ToString();
+            scoreText.text = "x " + score.ToString();
 
         }
 
