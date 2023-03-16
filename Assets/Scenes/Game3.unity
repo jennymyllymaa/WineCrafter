@@ -1068,7 +1068,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: a6e606fb265fe674e823461db1fc579b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1183,11 +1183,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2438362013861805677, guid: 79a4701025b844849a569c81cbd0a92d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.022274852
+      value: -0.196
       objectReference: {fileID: 0}
     - target: {fileID: 2438362013861805677, guid: 79a4701025b844849a569c81cbd0a92d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.5760996
+      value: -1.503
       objectReference: {fileID: 0}
     - target: {fileID: 2438362013861805677, guid: 79a4701025b844849a569c81cbd0a92d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1224,6 +1224,14 @@ PrefabInstance:
     - target: {fileID: 2438362013861805679, guid: 79a4701025b844849a569c81cbd0a92d, type: 3}
       propertyPath: m_Name
       value: Wine_bottle_empty
+      objectReference: {fileID: 0}
+    - target: {fileID: 6712838889490433448, guid: 79a4701025b844849a569c81cbd0a92d, type: 3}
+      propertyPath: m_Size.y
+      value: 27.318476
+      objectReference: {fileID: 0}
+    - target: {fileID: 6712838889490433448, guid: 79a4701025b844849a569c81cbd0a92d, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.21997738
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79a4701025b844849a569c81cbd0a92d, type: 3}
