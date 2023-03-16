@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 6712838889490433448}
   - component: {fileID: -382810307227500466}
   - component: {fileID: 3830824113004692343}
+  - component: {fileID: 1978448539432221734}
+  - component: {fileID: -1330779888502572389}
   m_Layer: 0
   m_Name: Wine_bottle_empty
   m_TagString: EmptyBottle
@@ -73,8 +75,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -198527969
+  m_SortingLayer: 2
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: db33a859ea64996418fa1b48cae72232, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -147,3 +149,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocity: {x: 1, y: 0}
+--- !u!70 &1978448539432221734
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2438362013861805679}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.05615374, y: 13.335213}
+  m_Size: {x: 1.9892683, y: 0.7970095}
+  m_Direction: 1
+--- !u!114 &-1330779888502572389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2438362013861805679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70527305a1b0dc549b510154987fb6df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

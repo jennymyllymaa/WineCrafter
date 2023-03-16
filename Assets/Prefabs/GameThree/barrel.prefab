@@ -94,6 +94,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5348548650796196385}
   - component: {fileID: 8291409453008652357}
+  - component: {fileID: -1755790078568552437}
+  - component: {fileID: 4770158335072339518}
   m_Layer: 0
   m_Name: barrel
   m_TagString: Untagged
@@ -169,3 +171,31 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &-1755790078568552437
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5979495227862142204}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -2.7265093, y: -3.3605757}
+  serializedVersion: 2
+  m_Radius: 0.20607233
+--- !u!114 &4770158335072339518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5979495227862142204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff3411ab80a3e3745a9c132369b0a7f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
