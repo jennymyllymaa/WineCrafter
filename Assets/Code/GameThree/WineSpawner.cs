@@ -7,10 +7,13 @@ namespace WineCrafter
     public class WineSpawner : MonoBehaviour
     {
         [SerializeField] public GameObject wineDrop;
+        [SerializeField] private int amountOfTries = 10;
 
-
+        private int usedTries = 0;
         private Vector3 spawnPosition;
         private CircleCollider2D col;
+
+        public bool outOfTries = false;
  
 
         void Awake()
@@ -21,20 +24,29 @@ namespace WineCrafter
 
         }
 
-        void Start()
-        {
-
-        }
-
         public void Spawn()
         {
-            GameObject newDrop = new GameObject("newDrop");
-            /*newDrop = wineDrop;*/
+            if (usedTries < amountOfTries)
+            {
+                Debug.Log("spawni aika");
+                Instantiate(wineDrop, spawnPosition, Quaternion.identity);
+                usedTries++;
+                Debug.Log("käytetty: " + usedTries);
+            }
+            else
+            {
+                outOfTries= true;
+            }
 
-            Debug.Log("spawni aika");
-            Instantiate(newDrop, spawnPosition, Quaternion.identity);
+        }
+        public int GetAmount()
+        {
+            return (amountOfTries - usedTries);
+        }
 
-
+        public bool GetTries()
+        {
+            return outOfTries;
         }
     }
 }

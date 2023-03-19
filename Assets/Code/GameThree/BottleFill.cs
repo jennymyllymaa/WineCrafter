@@ -7,10 +7,13 @@ namespace WineCrafter
     public class BottleFill : MonoBehaviour
     {
         private CapsuleCollider2D coll;
+        private SpriteRenderer spriteRenderer;
+        [SerializeField] private Sprite fullBottle;
 
         // Start is called before the first frame update
         void Awake()
         {
+            spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
             coll = GetComponent<CapsuleCollider2D>();
         }
 
@@ -25,8 +28,15 @@ namespace WineCrafter
             {
 
                 Destroy(GameObject.FindWithTag("WineDrop"));
+                ChangeSprite();
             }
 
         }
+
+        public void ChangeSprite()  
+        {
+            spriteRenderer.sprite = fullBottle;
+        }
+
     }
 }
