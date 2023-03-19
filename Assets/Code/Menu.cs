@@ -17,6 +17,20 @@ namespace WineCrafter
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         }
 
+        //method to go from third game to main menu
+        public void GoBackMenu()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 3);
+        }
+
+        //temporary method to move to the third game from game one
+        public void GoToThirdGame()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        }
+
+
+
         public void QuitGame()
         {
             Debug.Log("QUIT!");

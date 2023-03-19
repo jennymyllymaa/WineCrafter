@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 3830824113004692343}
   - component: {fileID: 1978448539432221734}
   - component: {fileID: -1330779888502572389}
+  - component: {fileID: 288009058781701494}
+  - component: {fileID: 35543041748557971}
   m_Layer: 0
   m_Name: Wine_bottle_empty
   m_TagString: EmptyBottle
@@ -102,7 +104,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -4.3811784}
+  m_Offset: {x: 0.08983135, y: -4.8503194}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -113,7 +115,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.5299997, y: 18.996075}
+  m_Size: {x: 4.8712387, y: 18.057793}
   m_EdgeRadius: 0
 --- !u!50 &-382810307227500466
 Rigidbody2D:
@@ -178,3 +180,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fullBottle: {fileID: 21300000, guid: 027f45ed060cbae46b4b6831d7a7173f, type: 3}
+--- !u!61 &288009058781701494
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2438362013861805679}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.029943585, y: 8.683668}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.5299997, y: 27.75843}
+    newSize: {x: 5.5299997, y: 27.75843}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.9966447, y: 6.7978525}
+  m_EdgeRadius: 0
+--- !u!58 &35543041748557971
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2438362013861805679}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0000011920929, y: 4.01181}
+  serializedVersion: 2
+  m_Radius: 2.549163

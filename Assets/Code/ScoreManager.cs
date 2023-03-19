@@ -43,6 +43,11 @@ namespace WineCrafter
             return score;
         }
 
+        public int GetTries()
+        {
+            return score;
+        }
+
     }
 }
 

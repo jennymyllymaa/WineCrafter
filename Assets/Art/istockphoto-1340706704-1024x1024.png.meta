@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 429b4c02265a1974f960f82a5dbe3863
+guid: 0b525165ccbf727448ea1383cb6e5578
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -115,28 +115,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: motikka_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 181
-        height: 226
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 404cb264b0391c341b173e76425ccef8
-      internalID: 1389615934
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -146,13 +125,8 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
-    secondaryTextures:
-    - texture: {instanceID: 0}
-      name: motikka2
-    - texture: {instanceID: 0}
-      name: motikka3
-    nameFileIdTable:
-      motikka_0: 1389615934
+    secondaryTextures: []
+    nameFileIdTable: {}
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

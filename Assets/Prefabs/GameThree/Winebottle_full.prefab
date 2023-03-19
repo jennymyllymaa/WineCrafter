@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7242611381864800725}
   - component: {fileID: -4735610601747136613}
   - component: {fileID: 6393207072337952030}
+  - component: {fileID: 6434489283906600097}
   m_Layer: 0
   m_Name: Winebottle_full
   m_TagString: FullBottle
@@ -99,7 +100,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -4.501668}
+  m_Offset: {x: 0.07704902, y: -4.3668327}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -110,7 +111,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.5299997, y: 18.755095}
+  m_Size: {x: 4.9906583, y: 19.024765}
   m_EdgeRadius: 0
 --- !u!50 &6393207072337952030
 Rigidbody2D:
@@ -133,3 +134,29 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 2
+--- !u!61 &6434489283906600097
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2430368176357140937}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.096310854, y: -0.96310997}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.5299997, y: 27.75843}
+    newSize: {x: 5.5299997, y: 27.75843}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.0242798, y: 25.83221}
+  m_EdgeRadius: 0

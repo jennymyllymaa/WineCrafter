@@ -10,6 +10,8 @@ namespace WineCrafter
         private SpriteRenderer spriteRenderer;
         [SerializeField] private Sprite fullBottle;
 
+        int bottlePoints = 0;
+
         // Start is called before the first frame update
         void Awake()
         {
@@ -29,6 +31,9 @@ namespace WineCrafter
 
                 Destroy(GameObject.FindWithTag("WineDrop"));
                 ChangeSprite();
+                bottlePoints += 1;
+                ScoreManager.instance.AddPoint();
+                Debug.Log(bottlePoints);
             }
 
         }
