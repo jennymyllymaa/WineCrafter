@@ -31,8 +31,11 @@ namespace WineCrafter
 
             yield return new WaitForSecondsRealtime(time);
 
-
-            Instantiate(emptyBottle, spawnPosition, Quaternion.identity);
+            if (Time.timeScale != 0f)
+            {
+                Instantiate(emptyBottle, spawnPosition, Quaternion.identity);
+            }
+                
 
             StartCoroutine(Spawn(time));
 

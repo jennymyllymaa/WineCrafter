@@ -20,7 +20,7 @@ namespace WineCrafter
         //method to go from third game to main menu
         public void GoBackMenu()
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 3);
+            SceneManager.LoadScene(0);
         }
 
         //temporary method to move to the third game from game one

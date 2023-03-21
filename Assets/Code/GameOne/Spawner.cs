@@ -35,16 +35,19 @@ namespace WineCrafter
         IEnumerator Spawn(float time)
         {
 
-                yield return new WaitForSecondsRealtime(time);
+            yield return new WaitForSecondsRealtime(time);
 
 
 
-                Vector3 temp = transform.position;
-                temp.x = Random.Range(x1, x2);
-
+            Vector3 temp = transform.position;
+            temp.x = Random.Range(x1, x2);
+            if (Time.timeScale != 0f)
+            {
                 Instantiate(fallingObjects[Random.Range(0, fallingObjects.Length)], temp, Quaternion.identity);
+            }
 
-                StartCoroutine(Spawn(Random.Range(0.01f, 1.5f)));
+            
+            StartCoroutine(Spawn(Random.Range(0.01f, 1.5f)));
 
         }
     }

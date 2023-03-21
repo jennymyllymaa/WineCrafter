@@ -19,16 +19,25 @@ public class Timer : MonoBehaviour
     public bool endOfGame = false;
 
     GameObject spawner;
+    public GameObject canvas;
+    int score;
+
+    GameObject gameOverParent;
+    GameObject paneeli;
+
 
     // Update is called once per frame
     void Update()
     {
         currentTime -= Time.deltaTime;
+        score = canvas.GetComponent<ScoreManager>().GetScore();
 
         if ( currentTime <=0 )
         {
             currentTime = timerLimit;
             SetTimerText();
+            
+            
         }
 
         SetTimerText();
@@ -36,10 +45,26 @@ public class Timer : MonoBehaviour
         if (currentTime == timerLimit)
         {
             endOfGame = true;
-            GameObject gameOverParent = GameObject.Find("LoppuRuutu");
-            GameObject teksti = gameOverParent.transform.Find("teksti").gameObject;
-            teksti.SetActive(true);
-            GameObject spawner = GameObject.Find("Spawner");
+
+            if (score > 0)
+            {
+                gameOverParent = GameObject.Find("Canvas");
+                paneeli = gameOverParent.transform.Find("LopetusPanel").gameObject;
+                paneeli.SetActive(true);
+            }
+
+            else 
+            {
+                gameOverParent = GameObject.Find("Canvas");
+                paneeli = gameOverParent.transform.Find("GameOverPanel").gameObject;
+                paneeli.SetActive(true);
+            }
+
+
+
+
+            //DELETE IF TIMESCALE = 0 WORKS AND STOPS MARJAT TO SPAWN
+            /*GameObject spawner = GameObject.Find("Spawner");
 
             if (spawner != null)
             {
@@ -48,8 +73,11 @@ public class Timer : MonoBehaviour
                 {
                     Debug.LogError($"{gameObject} is missing a component which it is dependant on!");
                 }
+                // this can probably be removed later when cleaning the code because this is already done with timescale
                 spawner.SetActive(false);
-            }
+            }*/
+
+
             Time.timeScale = 0;
         }
 
