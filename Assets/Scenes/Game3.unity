@@ -804,6 +804,8 @@ GameObject:
   - component: {fileID: 812401774}
   - component: {fileID: 812401773}
   - component: {fileID: 812401776}
+  - component: {fileID: 812401778}
+  - component: {fileID: 812401777}
   m_Layer: 0
   m_Name: WineDropDespawner
   m_TagString: Untagged
@@ -897,8 +899,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 812401771}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0516, y: -3.401, z: 0}
-  m_LocalScale: {x: 18.651047, y: 0.3018649, z: 1}
+  m_LocalPosition: {x: -0.0198, y: -3.4169, z: 0}
+  m_LocalScale: {x: 18.587633, y: 0.33368143, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -916,6 +918,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72a120d7b5ab469499194b8f3117098f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &812401777
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812401771}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.22810452, y: 14.44108}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.029190153, y: 28.928951}
+  m_EdgeRadius: 0
+--- !u!61 &812401778
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812401771}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.2258749, y: 14.441051}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.024630904, y: 29.11954}
+  m_EdgeRadius: 0
 --- !u!1 &818502375
 GameObject:
   m_ObjectHideFlags: 0

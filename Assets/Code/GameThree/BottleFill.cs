@@ -29,7 +29,7 @@ namespace WineCrafter
             if (collision.gameObject.tag == "WineDrop")
             {
 
-                Destroy(GameObject.FindWithTag("WineDrop"));
+                Destroy(collision.gameObject);
                 ChangeSprite();
                 bottlePoints += 1;
                 ScoreManager.instance.AddPoint();
