@@ -1328,7 +1328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   emptyBottle: {fileID: 2438362013861805679, guid: 79a4701025b844849a569c81cbd0a92d, type: 3}
-  time: 5
+  time: 2
 --- !u!61 &1237627556
 BoxCollider2D:
   m_ObjectHideFlags: 0
