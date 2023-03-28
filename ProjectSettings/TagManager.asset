@@ -9,6 +9,7 @@ TagManager:
   - EmptyBottle
   - FullBottle
   - WineDrop
+  - Bucket
   layers:
   - Default
   - TransparentFX

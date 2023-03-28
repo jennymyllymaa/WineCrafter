@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace WineCrafter
@@ -20,21 +21,33 @@ namespace WineCrafter
 
         void Start()
         {
-            scoreText.text = "x " + score.ToString();
+            if (SceneManager.GetActiveScene() != SceneManager.GetSceneByName("Game2"))
+            {
+                scoreText.text = "x " + score.ToString();
+            }
+                
         }
 
 
         public void AddPoint ()
         {
             score += 1;
-            scoreText.text = "x " + score.ToString();
+
+            if (SceneManager.GetActiveScene() != SceneManager.GetSceneByName("Game2"))
+            {
+                scoreText.text = "x " + score.ToString();
+            }
+
 
         }
 
         public void SubtractPoint()
         {
-            score = score - 1; 
-            scoreText.text = "x " + score.ToString();
+            score = score - 1;
+            if (SceneManager.GetActiveScene() != SceneManager.GetSceneByName("Game2"))
+            {
+                scoreText.text = "x " + score.ToString();
+            }
 
         }
 

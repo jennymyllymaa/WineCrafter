@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using WineCrafter;
 
@@ -25,6 +26,16 @@ public class Timer : MonoBehaviour
     GameObject gameOverParent;
     GameObject paneeli;
 
+    private void Start()
+    {
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Game2"))
+        {
+            /*if (ScoreSaver.Instance != null)
+            {
+
+            }*/
+        }
+    }
 
     // Update is called once per frame
     void Update()
@@ -59,24 +70,6 @@ public class Timer : MonoBehaviour
                 paneeli = gameOverParent.transform.Find("GameOverPanel").gameObject;
                 paneeli.SetActive(true);
             }
-
-
-
-
-            //DELETE IF TIMESCALE = 0 WORKS AND STOPS MARJAT TO SPAWN
-            /*GameObject spawner = GameObject.Find("Spawner");
-
-            if (spawner != null)
-            {
-                Spawner spawnerComponent = spawner.GetComponent<Spawner>();
-                if (spawnerComponent == null)
-                {
-                    Debug.LogError($"{gameObject} is missing a component which it is dependant on!");
-                }
-                // this can probably be removed later when cleaning the code because this is already done with timescale
-                spawner.SetActive(false);
-            }*/
-
 
             Time.timeScale = 0;
         }
