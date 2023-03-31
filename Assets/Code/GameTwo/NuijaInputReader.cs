@@ -35,7 +35,7 @@ namespace WineCrafter
                 Touch touch = Input.GetTouch(0);
 
                 nuijaAnim.Play("ALTNuija");
-                
+
                 worldTouchPosition = Camera.main.ScreenToWorldPoint(touch.position);
                 worldTouchPosition.z = 0;
                 targetPosition = worldTouchPosition + offset;

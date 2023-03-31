@@ -30,10 +30,9 @@ public class Timer : MonoBehaviour
     {
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Game2"))
         {
-            /*if (ScoreSaver.Instance != null)
-            {
-
-            }*/
+            
+            currentTime = PlayerPrefs.GetInt("currentGameScore", 0);
+            //ScoreManager.ResetPoints(); /*resetataan prefi jotta pistelasku alkaa alusta*/
         }
     }
 

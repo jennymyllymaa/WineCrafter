@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
 
@@ -26,6 +27,9 @@ namespace WineCrafter
         //start called only to make UI text appear right in the beginning
         private void Start()
         {
+            /*UUSI*/
+            amountOfTries = PlayerPrefs.GetInt("currentGameScore", 0);
+
             triesScore = amountOfTries;
             triesText.text = "x " + triesScore.ToString();
         }
@@ -35,7 +39,7 @@ namespace WineCrafter
             col = GetComponent<CircleCollider2D>();
             Vector2 colCenter = col.bounds.center;
             spawnPosition = new Vector3(colCenter.x, colCenter.y, transform.position.z);
-            
+
 
         }
 
@@ -49,9 +53,16 @@ namespace WineCrafter
                 Debug.Log("käytetty: " + usedTries);
                 SubtractTries();
             }
-            else
+            /*else
             {
-                outOfTries= true;
+                outOfTries = true;
+                EndOfGame();
+
+            }*/
+
+            if (usedTries == amountOfTries)
+            {
+                EndOfGame();
             }
 
         }
@@ -71,6 +82,18 @@ namespace WineCrafter
         public bool GetTries()
         {
             return outOfTries;
+        }
+
+        public void EndOfGame()
+        {
+            StartCoroutine(SomeCoroutine());
+        }
+
+        private IEnumerator SomeCoroutine()
+        {
+            yield return new WaitForSeconds(2);
+
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }

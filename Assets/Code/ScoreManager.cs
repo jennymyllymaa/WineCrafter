@@ -13,6 +13,7 @@ namespace WineCrafter
 
         public Text scoreText;
         int score = 0;
+        int resourcePoints = 0;
 
         private void Awake()
         {
@@ -21,10 +22,40 @@ namespace WineCrafter
 
         void Start()
         {
-            if (SceneManager.GetActiveScene() != SceneManager.GetSceneByName("Game2"))
+            /*UUSI*/ /*Scenen alussa muutetaan pisteet resursseiks ja nollataan pisteet ja sen playerpref*/
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Game2"))
             {
-                scoreText.text = "x " + score.ToString();
+                LoadPoints();
+                resourcePoints = score;
+                Debug.Log("Resurssi: " + resourcePoints);
+                score = 0;
+                /*ei resetata prefi‰ viel‰ t‰‰ll‰ koska timer tarvii sit‰*/
+                Debug.Log("Pisteet: " + score);
+
             }
+
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Game3"))
+            {
+                LoadPoints();
+                resourcePoints = score;
+                Debug.Log("Resurssi: " + resourcePoints);
+                score = 0;
+                Debug.Log("Pisteet: " + score);
+            }
+
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Score"))
+            {
+                LoadPoints();
+
+            }
+
+            Debug.Log(PlayerPrefs.GetInt("currentGameScore", 0));
+
+
+            /*if (SceneManager.GetActiveScene() != SceneManager.GetSceneByName("Game2"))
+            {*/
+            scoreText.text = "x " + score.ToString();
+            /*}*/
                 
         }
 
@@ -33,10 +64,15 @@ namespace WineCrafter
         {
             score += 1;
 
-            if (SceneManager.GetActiveScene() != SceneManager.GetSceneByName("Game2"))
-            {
+            /*UUSI*/
+            PlayerPrefs.SetInt("currentGameScore", score);
+            PlayerPrefs.Save();
+
+            /*if (SceneManager.GetActiveScene() != SceneManager.GetSceneByName("Game2"))
+            {*/
                 scoreText.text = "x " + score.ToString();
-            }
+
+            /*}*/
 
 
         }
@@ -44,11 +80,34 @@ namespace WineCrafter
         public void SubtractPoint()
         {
             score = score - 1;
-            if (SceneManager.GetActiveScene() != SceneManager.GetSceneByName("Game2"))
+
+            /*UUSI*/
+            PlayerPrefs.SetInt("currentGameScore", score);
+            PlayerPrefs.Save();
+
+            /*if (SceneManager.GetActiveScene() != SceneManager.GetSceneByName("Game2"))
             {
                 scoreText.text = "x " + score.ToString();
-            }
+            }*/
 
+        }
+
+        /*UUSI*/
+        public void LoadPoints()
+        {
+            score = PlayerPrefs.GetInt("currentGameScore", 0);
+        }
+
+        /*UUSI*/
+        public static void ResetPoints()
+        {
+            PlayerPrefs.SetInt("currentGameScore", 0);
+        }
+
+        /*UUSI*/
+        public int GetResourcePoints()
+        {
+            return resourcePoints;
         }
 
         public int GetScore()

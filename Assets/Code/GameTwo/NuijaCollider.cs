@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace WineCrafter
 {
@@ -10,10 +11,19 @@ namespace WineCrafter
         private int mashPoints = 0;
         public ParticleSystem wineBurst;
 
+        public GameObject fillBar;
+        public ProgressBar progressBarScript;
+
+
+
         // Start is called before the first frame update
         void Start()
         {
             nuijaColl = GetComponent<BoxCollider2D>();
+
+            fillBar = GameObject.Find("FillBarParent");
+
+            progressBarScript = fillBar.GetComponent<ProgressBar>();
 
         }
 
@@ -32,8 +42,21 @@ namespace WineCrafter
                 mashPoints += 1;
                 wineBurst.Play();
 
-                // ScoreManager.instance.AddPoint();
-                Debug.Log(mashPoints);
+
+
+                /*UUSI*/
+                //ScoreManager.instance.AddPoint();
+
+                progressBarScript.AddPointsFill();
+
+
+                /*if (progressBar != null)
+                {
+                    ProgressBar.AddPointsFill();
+                }*/
+
+
+                /*Debug.Log(mashPoints);*/
             }
 
         }
