@@ -14,7 +14,7 @@ namespace WineCrafter
         public GameObject fillBar;
         public ProgressBar progressBarScript;
 
-
+        public AudioSource ASMash;
 
         // Start is called before the first frame update
         void Start()
@@ -27,36 +27,18 @@ namespace WineCrafter
 
         }
 
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
-
         public void OnTriggerEnter2D(Collider2D collision)
         {
             if (collision.gameObject.tag == "Bucket")
             {
 
-                
+                ASMash.Play();
+            
                 mashPoints += 1;
                 wineBurst.Play();
 
-
-
-                /*UUSI*/
-                //ScoreManager.instance.AddPoint();
-
                 progressBarScript.AddPointsFill();
 
-
-                /*if (progressBar != null)
-                {
-                    ProgressBar.AddPointsFill();
-                }*/
-
-
-                /*Debug.Log(mashPoints);*/
             }
 
         }

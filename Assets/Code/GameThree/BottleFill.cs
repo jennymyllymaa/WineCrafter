@@ -12,6 +12,8 @@ namespace WineCrafter
 
         int bottlePoints = 0;
 
+        public AudioSource ASBottleFill;
+
         // Start is called before the first frame update
         void Awake()
         {
@@ -28,7 +30,7 @@ namespace WineCrafter
         {
             if (collision.gameObject.tag == "WineDrop")
             {
-
+                ASBottleFill.Play();
                 Destroy(collision.gameObject);
                 ChangeSprite();
                 bottlePoints += 1;

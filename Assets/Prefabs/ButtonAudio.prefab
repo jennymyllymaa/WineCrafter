@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7736624623421461866
+--- !u!1 &5381514853019713921
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,62 +8,48 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7736624623421461868}
-  - component: {fileID: 7736624623421461867}
-  - component: {fileID: -871643970902164451}
-  m_Layer: 0
-  m_Name: TimerManager
+  - component: {fileID: 5381514853019713934}
+  - component: {fileID: 5381514853019713935}
+  m_Layer: 5
+  m_Name: ButtonAudio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7736624623421461868
-Transform:
+--- !u!224 &5381514853019713934
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7736624623421461866}
+  m_GameObject: {fileID: 5381514853019713921}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 189.07097, y: 2377.4058, z: 20.028494}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7736624623421461867
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7736624623421461866}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 238c224a6aaf49948be52c85d930b966, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timerText: {fileID: 0}
-  currentTime: 10
-  timerLimit: 0
-  endOfGame: 0
-  canvas: {fileID: 0}
-  ASChangeLevel: {fileID: -871643970902164451}
---- !u!82 &-871643970902164451
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!82 &5381514853019713935
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7736624623421461866}
+  m_GameObject: {fileID: 5381514853019713921}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c132606aaf94abf42a6abb79630c907b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 742f3f8503182d24eaf8cfe9ad363982, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.664
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0

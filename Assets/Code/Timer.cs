@@ -26,6 +26,8 @@ public class Timer : MonoBehaviour
     GameObject gameOverParent;
     GameObject paneeli;
 
+    public AudioSource ASChangeLevel;
+
     private void Start()
     {
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Game2"))
@@ -61,6 +63,8 @@ public class Timer : MonoBehaviour
                 gameOverParent = GameObject.Find("Canvas");
                 paneeli = gameOverParent.transform.Find("LopetusPanel").gameObject;
                 paneeli.SetActive(true);
+
+                //ASChangeLevel.Play();
             }
 
             else 
@@ -68,6 +72,8 @@ public class Timer : MonoBehaviour
                 gameOverParent = GameObject.Find("Canvas");
                 paneeli = gameOverParent.transform.Find("GameOverPanel").gameObject;
                 paneeli.SetActive(true);
+
+                //ASChangeLevel.Play(); //TÄHÄN GAME OVER
             }
 
             Time.timeScale = 0;
