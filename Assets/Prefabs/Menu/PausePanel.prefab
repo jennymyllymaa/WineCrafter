@@ -109,11 +109,11 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5960537832505069907}
-  - {fileID: 3647772391769355597}
-  - {fileID: 8026787176690440217}
-  - {fileID: 8026787176052172674}
   - {fileID: 8026787176128901889}
   - {fileID: 8026787177213671166}
+  - {fileID: 8026787176690440217}
+  - {fileID: 8026787176052172674}
+  - {fileID: 3647772391769355597}
   m_Father: {fileID: 50348354931138328}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -670,7 +670,7 @@ RectTransform:
   m_Children:
   - {fileID: 8026787176587942528}
   m_Father: {fileID: 9038335062293760020}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -705,7 +705,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 46bec2a0be79d754a980d68291733dc3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 65975a562ced9ac45a80e91ba1944c26, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -889,7 +889,7 @@ RectTransform:
   - {fileID: 8026787177309564351}
   - {fileID: 8026787176092743218}
   m_Father: {fileID: 9038335062293760020}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1076,7 +1076,7 @@ RectTransform:
   m_Children:
   - {fileID: 8026787175504831900}
   m_Father: {fileID: 9038335062293760020}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -1111,7 +1111,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 46bec2a0be79d754a980d68291733dc3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 65975a562ced9ac45a80e91ba1944c26, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1202,7 +1202,7 @@ GameObject:
   - component: {fileID: 8026787176917980582}
   - component: {fileID: 8026787176917980583}
   m_Layer: 5
-  m_Name: Volume (1)
+  m_Name: Language
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1295,7 +1295,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8026787177213671166}
   m_Layer: 5
-  m_Name: Liput
+  m_Name: Language
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1317,7 +1317,7 @@ RectTransform:
   - {fileID: 8026787177281537929}
   - {fileID: 8026787177258238495}
   m_Father: {fileID: 9038335062293760020}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1338,7 +1338,7 @@ GameObject:
   - component: {fileID: 8026787177258238493}
   - component: {fileID: 8026787177258238494}
   m_Layer: 5
-  m_Name: Eng
+  m_Name: ENG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1475,7 +1475,7 @@ GameObject:
   - component: {fileID: 8026787177281537927}
   - component: {fileID: 8026787177281537928}
   m_Layer: 5
-  m_Name: Suomi
+  m_Name: FIN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1744,7 +1744,7 @@ RectTransform:
   m_Children:
   - {fileID: 3410515748408991611}
   m_Father: {fileID: 9038335062293760020}
-  m_RootOrder: 1
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -1779,7 +1779,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 46bec2a0be79d754a980d68291733dc3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 65975a562ced9ac45a80e91ba1944c26, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1952,6 +1952,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3178318549979587435, guid: 9f4453bfc837c764f84bd0050766cf04, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 546e86838d41e3e4d82d0ddd4e1ef2f9, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f4453bfc837c764f84bd0050766cf04, type: 3}
 --- !u!224 &3324090952871918481 stripped

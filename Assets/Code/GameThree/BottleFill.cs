@@ -11,7 +11,6 @@ namespace WineCrafter
         [SerializeField] private Sprite fullBottle;
 
         int bottlePoints = 0;
-
         public AudioSource ASBottleFill;
 
         // Start is called before the first frame update
@@ -21,11 +20,6 @@ namespace WineCrafter
             coll = GetComponent<CapsuleCollider2D>();
         }
 
-        // Update is called once per frame
-        void FixedUpdate()
-        {
-
-        }
         public void OnTriggerEnter2D(Collider2D collision)
         {
             if (collision.gameObject.tag == "WineDrop")
@@ -35,7 +29,6 @@ namespace WineCrafter
                 ChangeSprite();
                 bottlePoints += 1;
                 ScoreManager.instance.AddPoint();
-                Debug.Log(bottlePoints);
             }
 
         }

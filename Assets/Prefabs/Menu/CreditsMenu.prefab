@@ -816,7 +816,7 @@ GameObject:
   - component: {fileID: 1531239794439374089}
   - component: {fileID: 7116427903138508199}
   m_Layer: 5
-  m_Name: Image
+  m_Name: TeiskoViiniLogo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -870,7 +870,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7bf9fffd03a9d8d46bd8c2357ab31988, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f46e4f2d575233a42bd38600cf52a60c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1263,7 +1263,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 46bec2a0be79d754a980d68291733dc3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 65975a562ced9ac45a80e91ba1944c26, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
