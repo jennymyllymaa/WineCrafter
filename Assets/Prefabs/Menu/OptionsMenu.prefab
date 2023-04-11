@@ -1222,6 +1222,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4467610309125789049}
   - component: {fileID: 4467610309125789048}
+  - component: {fileID: 8933693529670993816}
   m_Layer: 5
   m_Name: VolumeSlider
   m_TagString: Untagged
@@ -1303,7 +1304,32 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8933693529670993816}
+        m_TargetAssemblyTypeName: WineCrafter.SoundManager, Assembly-CSharp
+        m_MethodName: ChangeVolume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8933693529670993816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4467610309125789050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c920652f474cd347bace9d7d81a49ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeSlider: {fileID: 4467610309125789048}
 --- !u!1 &4467610309240177637
 GameObject:
   m_ObjectHideFlags: 0
