@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: UItext Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: UItext
+  m_TableCollectionNameGuidString: c2e5c3f81ab772848a72bfa393face3a
+  m_Entries:
+  - m_Id: 113727746048
+    m_Key: Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3451626172416
+    m_Key: Options
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3947896221696
+    m_Key: Credits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4406908268544
+    m_Key: Quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26302655737856
+    m_Key: Main menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26988839677952
+    m_Key: Pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27104388558848
+    m_Key: Resume
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 2713717028497653812
+  references:
+    version: 2
+    RefIds:
+    - rid: 2713717028497653812
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1681313388269

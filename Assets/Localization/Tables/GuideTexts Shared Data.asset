@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: GuideTexts Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: GuideTexts
+  m_TableCollectionNameGuidString: 9074d0cad90244043bc40cfb7aaeaa3f
+  m_Entries:
+  - m_Id: 34979688448
+    m_Key: OptionsGuide1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 738347692032
+    m_Key: OptionsGuide2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1101373091840
+    m_Key: OptionsGuide3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14864277024768
+    m_Key: InstructionGame1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15106334502912
+    m_Key: InstructionsGame2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15182385623040
+    m_Key: InstructionsGame3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16337333366784
+    m_Key: GameOverGame1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16570020769792
+    m_Key: GameOverGame2
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 2713717028497653818
+  references:
+    version: 2
+    RefIds:
+    - rid: 2713717028497653818
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1681315682344

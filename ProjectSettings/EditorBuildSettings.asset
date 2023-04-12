@@ -23,4 +23,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Score.unity
     guid: a9c6b5370bb57104db497e5f41d071df
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: c4ed3c08df1bbbb49960a8536802c4e5, type: 2}
+    com.unity.localization.settings: {fileID: 11400000, guid: a68c3d74d1816204890188a6d9e85065, type: 2}

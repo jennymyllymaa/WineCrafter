@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: GuideTexts_fi
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fi
+  m_SharedData: {fileID: 11400000, guid: 9074d0cad90244043bc40cfb7aaeaa3f, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 34979688448
+    m_Localized: "Ker\xE4\xE4 marjat ja tomaatit, mutta \xE4l\xE4 tikkuja ja lehti\xE4."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 738347692032
+    m_Localized: "Muussaa ainekset n\xE4pytt\xE4m\xE4ll\xE4 marjoja niin nopeasti
+      kuin pystyt!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1101373091840
+    m_Localized: "Vapauta viini painamalla painiketta. Yrit\xE4 saada viini osumaan
+      pulloon!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14864277024768
+    m_Localized: "Tervetuloa tekem\xE4\xE4n viini\xE4! Ker\xE4\xE4 marjat ja tomaatit,
+      mutta \xE4l\xE4 tikkuja ja lehti\xE4."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15106334502912
+    m_Localized: "Hienosti ker\xE4tty! Muussaa ainekset n\xE4pytt\xE4m\xE4ll\xE4
+      marjoja niin nopeasti kuin pystyt!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15182385623040
+    m_Localized: "Upeeta! Vapauta viini painamalla painiketta. Yrit\xE4 saada viini
+      osumaan pulloon!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16337333366784
+    m_Localized: "Voi ei! Et ker\xE4nnyt tarpeeksi ainesosia viinin valmistamiseen.
+      Muista, ett\xE4 tikuista ja lehdist\xE4 ei voi tehd\xE4 viini\xE4, joten \xE4l\xE4
+      ker\xE4\xE4 niit\xE4!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16570020769792
+    m_Localized: Voi ei! Et muussannut tarpeeksi aineksia. Vain muussatut ainekset
+      voidaan pullottaa viiniin.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
