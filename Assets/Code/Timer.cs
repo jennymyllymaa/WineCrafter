@@ -61,7 +61,7 @@ public class Timer : MonoBehaviour
             if (score > 0)
             {
                 gameOverParent = GameObject.Find("Canvas");
-                paneeli = gameOverParent.transform.Find("LopetusPanel").gameObject;
+                paneeli = gameOverParent.transform.Find("EndPanel").gameObject;
                 paneeli.SetActive(true);
 
                 //ASChangeLevel.Play();
@@ -70,7 +70,7 @@ public class Timer : MonoBehaviour
             else 
             {
                 gameOverParent = GameObject.Find("Canvas");
-                paneeli = gameOverParent.transform.Find("GameOverPanel").gameObject;
+                paneeli = gameOverParent.transform.Find("NEWGAMEOVERPANEL").gameObject;
                 paneeli.SetActive(true);
 
                 //ASChangeLevel.Play(); //TÄHÄN GAME OVER

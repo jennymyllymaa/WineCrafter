@@ -7,7 +7,8 @@ namespace WineCrafter
     public class BottleSpawner : MonoBehaviour
     {
         [SerializeField] private GameObject emptyBottle;
-        [SerializeField] private int time = 2;
+        [SerializeField] private float minSpawnTime = 1.0f;
+        [SerializeField] private float maxSpawnTime = 2.0f;
 
         private Vector3 spawnPosition;
         private BoxCollider2D col;
@@ -23,13 +24,13 @@ namespace WineCrafter
         // Start is called before the first frame update
         void Start()
         {
-            StartCoroutine(Spawn(time));
+            StartCoroutine(Spawn());
         }
 
-        IEnumerator Spawn(int time)
+        IEnumerator Spawn()
         {
-
-            yield return new WaitForSecondsRealtime(time);
+            float randomTime = Random.Range(minSpawnTime, maxSpawnTime);
+            yield return new WaitForSecondsRealtime(randomTime);
 
             if (Time.timeScale != 0f)
             {
@@ -37,7 +38,7 @@ namespace WineCrafter
             }
                 
 
-            StartCoroutine(Spawn(time));
+            StartCoroutine(Spawn());
 
         }
     }

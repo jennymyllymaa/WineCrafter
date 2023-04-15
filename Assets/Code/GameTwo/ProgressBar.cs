@@ -41,7 +41,7 @@ namespace WineCrafter
 
         public void AddPointsFill()
         {
-            current = current + 10;
+            current = current + 20;
         }
     }
 }

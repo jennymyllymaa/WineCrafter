@@ -37,8 +37,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 15106334502912
-    m_Localized: Well done! Mash the ingredients by tabbing the berries as fast as
-      you can!
+    m_Localized: Well done! Next Mash the ingredients by tabbing the berries as fast
+      as you can!
     m_Metadata:
       m_Items: []
   - m_Id: 15182385623040
@@ -54,6 +54,11 @@ MonoBehaviour:
   - m_Id: 16570020769792
     m_Localized: Oh no! You didn't mash enough ingredients. Only mashed ingredients
       can be bottled into wine.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1068874224283648
+    m_Localized: Oh no! You didn't bottle anything. Hope you have better luck next
+      time!
     m_Metadata:
       m_Items: []
   references:
