@@ -15,18 +15,27 @@ namespace WineCrafter
         int score = 0;
         int resourcePoints = 0;
 
+        Timer timer;
+
         private void Awake()
         {
             instance = this;
         }
 
+
         void Start()
         {
-            /*UUSI*/ /*Scenen alussa muutetaan pisteet resursseiks ja nollataan pisteet ja sen playerpref*/
+
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Game1"))
+            {
+                timer = GameObject.Find("TimerManager").GetComponent<Timer>();
+            }
+
+            /*Scenen alussa muutetaan pisteet resursseiks ja nollataan pisteet ja sen playerpref*/
             if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Game2"))
             {
                 LoadPoints();
-                resourcePoints = score;
+                resourcePoints = score / 2;
                 Debug.Log("Resurssi: " + resourcePoints);
                 score = 0;
                 Debug.Log("Pisteet: " + score);
@@ -54,10 +63,9 @@ namespace WineCrafter
 
         private void Update()
         {
-            /*if (score != PlayerPrefs.GetInt("currentGameScore", 0))
-            {*/
+           
             SavePoints();
-            /*}*/
+            
         }
 
 
@@ -65,25 +73,29 @@ namespace WineCrafter
         {
             score += 1;
 
-            /*UUSI*/
+            
             PlayerPrefs.SetInt("currentGameScore", score);
-            //PlayerPrefs.Save();
+
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Game1"))
+            {
+                timer.AddSecond();
+            }
 
             scoreText.text = "x " + score.ToString();
-
-
-
 
         }
 
         public void SubtractPoint()
         {
-            score = score - 1;
+            score = score - 5;
 
-            /*UUSI*/
+            
             PlayerPrefs.SetInt("currentGameScore", score);
-            //PlayerPrefs.Save();
 
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Game1"))
+            {
+                timer.SubtractSecond();
+            }
 
             scoreText.text = "x " + score.ToString();
 

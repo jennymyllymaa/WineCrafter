@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1765680385379517260}
   - component: {fileID: 2901037242047940508}
   - component: {fileID: 2786140657956051068}
+  - component: {fileID: -4934675764240323552}
   m_Layer: 0
   m_Name: Oksa
   m_TagString: Roska
@@ -138,3 +139,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amplitude: 10
   speed: 5
+--- !u!114 &-4934675764240323552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7141428516065274265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d594618c7ca7014bad97555eaf7894a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

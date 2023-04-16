@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4364659655281672360}
   - component: {fileID: 3568414399255225550}
   - component: {fileID: 3978097443774540580}
+  - component: {fileID: 7713026433897822420}
   m_Layer: 0
   m_Name: Mustikka
   m_TagString: Marjat
@@ -138,3 +139,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amplitude: 10
   speed: 5
+--- !u!114 &7713026433897822420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4476596838328638179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d594618c7ca7014bad97555eaf7894a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

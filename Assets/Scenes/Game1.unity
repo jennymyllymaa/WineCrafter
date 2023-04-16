@@ -1743,6 +1743,7 @@ GameObject:
   - component: {fileID: 1496508055}
   - component: {fileID: 1496508054}
   - component: {fileID: 1496508053}
+  - component: {fileID: 1496508058}
   - component: {fileID: 1496508052}
   - component: {fileID: 1496508057}
   m_Layer: 5
@@ -1854,6 +1855,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 2115368161}
+--- !u!114 &1496508058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496508051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ebfcb476e88b3e4ca02074520804455, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialGravityScale: 10
 --- !u!224 &1550935378 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3216695344893364615, guid: a54a87028a2679a47a89b62de8500721, type: 3}
@@ -2908,7 +2922,7 @@ PrefabInstance:
       objectReference: {fileID: 1152136834}
     - target: {fileID: 7736624623421461867, guid: ac27f339bbc859543b4c5a4888d725fa, type: 3}
       propertyPath: currentTime
-      value: 30
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7736624623421461868, guid: ac27f339bbc859543b4c5a4888d725fa, type: 3}
       propertyPath: m_RootOrder

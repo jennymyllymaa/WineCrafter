@@ -33,8 +33,8 @@ public class Timer : MonoBehaviour
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Game2"))
         {
             
-            currentTime = PlayerPrefs.GetInt("currentGameScore", 0);
-            //ScoreManager.ResetPoints(); /*resetataan prefi jotta pistelasku alkaa alusta*/
+            currentTime = PlayerPrefs.GetInt("currentGameScore", 0) / 2;
+            
         }
     }
 
@@ -84,6 +84,16 @@ public class Timer : MonoBehaviour
     private void SetTimerText()
     {
         timerText.text = currentTime.ToString("0");
+    }
+
+    public void AddSecond()
+    {
+        currentTime++;
+    }
+
+    public void SubtractSecond()
+    {
+        currentTime = currentTime - 5;
     }
 
 

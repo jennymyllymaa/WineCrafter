@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7300927182226536408}
   - component: {fileID: -411741544043291072}
   - component: {fileID: 110095348589408108}
+  - component: {fileID: 2298966411756382270}
   m_Layer: 0
   m_Name: Lehti
   m_TagString: Roska
@@ -138,3 +139,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amplitude: 360
   speed: 0.05
+--- !u!114 &2298966411756382270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7141136404175782131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d594618c7ca7014bad97555eaf7894a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

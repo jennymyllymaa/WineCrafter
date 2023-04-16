@@ -882,6 +882,7 @@ GameObject:
   - component: {fileID: 1358087615786900057}
   - component: {fileID: 8311402780578073043}
   - component: {fileID: 371223015850526159}
+  - component: {fileID: 2880363823556768086}
   m_Layer: 5
   m_Name: PointsText
   m_TagString: Untagged
@@ -966,6 +967,19 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.57254905}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+--- !u!114 &2880363823556768086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4803214284894282357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c9faa3b28845a943906a5eed0f39698, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 8311402780578073043}
 --- !u!1 &5953104926281158766
 GameObject:
   m_ObjectHideFlags: 0
