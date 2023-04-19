@@ -22,10 +22,18 @@ namespace WineCrafter
 
         }
 
+        void Update()
+        {
+            if(PlayerPrefs.GetInt("currentGameScore", 0) > 50)
+            {
+                gravityMultiplier = 1.6f;
+            }
+        }
+
         void IncreaseGravity()
         {
             gravityScale = gravityScale * gravityMultiplier;
-            Debug.Log("GravityScale Increased: " + gravityScale + " laskettu: x " + gravityMultiplier);
+
 
         }
 

@@ -63,15 +63,32 @@ namespace WineCrafter
         private float maxSpawnDelay = 2f; // maximum time between spawns
         private float lastSpawnTime; // time of last spawn
 
+        //float cameraHeight;
+        //float cameraWidth;
+
         // Start is called before the first frame update
+
+        /*private void Start()
+        {
+            Camera cam = Camera.main;
+            cameraHeight = 2f * cam.orthographicSize;
+            cameraWidth = cameraHeight * cam.aspect;
+            Debug.Log("Screen:" + cameraWidth);
+            transform.localScale = new Vector3(cameraWidth, 1, 0);
+        }*/
         void Awake()
         {
+
             col = GetComponent<BoxCollider2D>();
             x1 = transform.position.x - col.bounds.size.x / 2f;
             x2 = transform.position.x + col.bounds.size.x / 2f;
 
-            // Initialize lastSpawnTime to the current time
+            //Initialize lastSpawnTime to the current time
             lastSpawnTime = Time.time;
+
+
+
+
         }
 
         // Update is called once per frame
