@@ -229,6 +229,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 256774881}
     m_Modifications:
+    - target: {fileID: -7781390473994780999, guid: 639c48bdd0c4ae749ad2d8826009b667, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2703257272537674266, guid: 639c48bdd0c4ae749ad2d8826009b667, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 3
@@ -405,6 +409,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Play
       objectReference: {fileID: 0}
+    - target: {fileID: 6438656642957311323, guid: 639c48bdd0c4ae749ad2d8826009b667, type: 3}
+      propertyPath: gameOverpanel
+      value: 
+      objectReference: {fileID: 107987766}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 639c48bdd0c4ae749ad2d8826009b667, type: 3}
 --- !u!224 &107987764 stripped
@@ -417,12 +425,17 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2703257272905438965, guid: 639c48bdd0c4ae749ad2d8826009b667, type: 3}
   m_PrefabInstance: {fileID: 107987763}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 107987766}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: faf0a822f3d08c748a190b30820eee3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &107987766 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2703257272905438963, guid: 639c48bdd0c4ae749ad2d8826009b667, type: 3}
+  m_PrefabInstance: {fileID: 107987763}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &141692055
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3281,7 +3294,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0

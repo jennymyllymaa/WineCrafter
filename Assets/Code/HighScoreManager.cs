@@ -24,7 +24,8 @@ namespace WineCrafter
                     highScoreNumber = PlayerPrefs.GetInt("personalHighScore", 0);
                 }
 
-                highScore.text = "Highscore: " + highScoreNumber;
+                // Noora muutti pisteet niin, ett‰ tulee pelkk‰ pistem‰‰r‰ ja highscore teksti on eri tiedostossa localizationin takia
+                highScore.text = highScoreNumber.ToString();
                 PlayerPrefs.SetInt("currentGameScore", 0);
             }
 

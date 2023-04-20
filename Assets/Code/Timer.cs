@@ -34,8 +34,8 @@ public class Timer : MonoBehaviour
         {
             
             currentTime = PlayerPrefs.GetInt("currentGameScore", 0) / 2;
-            
         }
+
     }
 
     // Update is called once per frame
@@ -64,7 +64,7 @@ public class Timer : MonoBehaviour
                 paneeli = gameOverParent.transform.Find("EndPanel").gameObject;
                 paneeli.SetActive(true);
 
-                //ASChangeLevel.Play();
+                /* ASChangeLevel.Play(); */ //tehdään tällekkin oma script todennäköisesti ja pois täältä.
             }
 
             else 
@@ -72,8 +72,10 @@ public class Timer : MonoBehaviour
                 gameOverParent = GameObject.Find("Canvas");
                 paneeli = gameOverParent.transform.Find("NEWGAMEOVERPANEL").gameObject;
                 paneeli.SetActive(true);
+                
+                /* gameOver.Play();*/  //siirretty omaan scriptiin ja kiinnitetty game over paneeleihin.
 
-                //ASChangeLevel.Play(); //TÄHÄN GAME OVER
+
             }
 
             Time.timeScale = 0;

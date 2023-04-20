@@ -10,14 +10,16 @@ namespace WineCrafter
     public class WineSpawner : MonoBehaviour
     {
         [SerializeField] public GameObject wineDrop;
-        [SerializeField] private int amountOfTries = 10;
+
+        // otettu pois SerializedField amountofTriesist‰ koska haetaan luku Playerprefist‰
+        private int amountOfTries;
 
         // these two are used for the ui score text
         public Text triesText;
         private int triesScore = 0;
 
 
-        private int usedTries = 0;
+        // t‰t‰ ei en‰‰ tarvita jos kaikki toimii! poista jos ei bugaa kolmosen pisteet. private int usedTries = 0;
         private Vector3 spawnPosition;
         private CircleCollider2D col;
 
@@ -45,36 +47,60 @@ namespace WineCrafter
 
         public void Spawn()
         {
-            if (usedTries < amountOfTries)
+            /* jennyn  vanha koodi, voidaan poistaa jos ei tule kolmosen pistelaskuun bugeja 
+             * 
+             * if (usedTries < amountOfTries)
             {
                 Debug.Log("spawni aika");
                 Instantiate(wineDrop, spawnPosition, Quaternion.identity);
                 usedTries++;
                 Debug.Log("k‰ytetty: " + usedTries);
                 SubtractTries();
+            } */
+
+            
+            // UUSI KOODI NOORALTA KORVATTU YLLƒ OLEVA VANHA 
+            if (amountOfTries > 0)
+            {
+                Instantiate(wineDrop, spawnPosition, Quaternion.identity);
+                amountOfTries--;
+                SubtractTries();
+
             }
-            /*else
-            {
-                outOfTries = true;
-                EndOfGame();
 
-            }*/
+            // UUSI KOODI NOORALTA.
+            //kun vuorot loppuu ja jos on saanut edes yhden pisteen, tulee score scene
+            //jos taas vuorot loppuu JA ei ole yht‰‰n scorea, tulee game over paneeli ja peli p‰‰ttyy
 
-            if (usedTries == amountOfTries)
+            if (amountOfTries == 0 && PlayerPrefs.GetInt("currentGameScore") != 0)
             {
                 EndOfGame();
+            }
+
+
+            if (amountOfTries == 0 && PlayerPrefs.GetInt("currentGameScore") == 0)
+            {
+                GameObject gameOverParent;
+                GameObject paneeli;
+
+                gameOverParent = GameObject.Find("Canvas");
+                paneeli = gameOverParent.transform.Find("NEWGAMEOVERPANEL").gameObject;
+                paneeli.SetActive(true);
+                Time.timeScale = 0;
             }
 
         }
+
+        // alla olevaa ei k‰ytet‰ ollenkaan, poista jos ei tule k‰yttˆ‰
         public int GetAmount()
         {
-            return (amountOfTries - usedTries);
+            return amountOfTries;
         }
 
         //ui text method to show how many tries are left. Will probably be moved to a different script
         public void SubtractTries()
         {
-            triesScore = amountOfTries - usedTries;
+            triesScore = amountOfTries;
             triesText.text = "x " + triesScore.ToString();
 
         }

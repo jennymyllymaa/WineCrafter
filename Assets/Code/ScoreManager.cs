@@ -49,6 +49,8 @@ namespace WineCrafter
                 Debug.Log("Resurssi: " + resourcePoints);
                 score = 0;
                 Debug.Log("Pisteet: " + score);
+
+                
             }
 
             if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Score"))
@@ -65,7 +67,7 @@ namespace WineCrafter
         {
            
             SavePoints();
-            
+
         }
 
 
