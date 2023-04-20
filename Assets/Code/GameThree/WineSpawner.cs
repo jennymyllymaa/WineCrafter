@@ -91,7 +91,7 @@ namespace WineCrafter
 
         private IEnumerator SomeCoroutine()
         {
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(1);
 
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
