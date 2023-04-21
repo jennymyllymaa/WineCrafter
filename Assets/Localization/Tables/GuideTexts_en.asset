@@ -32,18 +32,17 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 14864277024768
-    m_Localized: Welcome to making wine! Collect berries and tomatoes, but not the
-      sticks and leaves.
+    m_Localized: Collect ingredients with the basket.
     m_Metadata:
       m_Items: []
   - m_Id: 15106334502912
-    m_Localized: Well done! Next Mash the ingredients by tabbing the berries as fast
+    m_Localized: Well done! Next mash the ingredients by tapping the berries as fast
       as you can!
     m_Metadata:
       m_Items: []
   - m_Id: 15182385623040
     m_Localized: Amazing! Release the wine by pressing the button. Try to get the
-      wine hit the bottle!
+      drop to hit the bottle!
     m_Metadata:
       m_Items: []
   - m_Id: 16337333366784
@@ -59,6 +58,10 @@ MonoBehaviour:
   - m_Id: 1068874224283648
     m_Localized: Oh no! You didn't bottle anything. Hope you have better luck next
       time!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3217493425631232
+    m_Localized: Welcome to Teiskon Winery!
     m_Metadata:
       m_Items: []
   references:

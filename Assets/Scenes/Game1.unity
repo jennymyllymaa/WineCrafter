@@ -686,6 +686,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2703257272989676506, guid: 2429dec7f529e7c4ab78a82077925eb9, type: 3}
+      propertyPath: m_Text
+      value: Collect ingredients with the basket.
+      objectReference: {fileID: 0}
     - target: {fileID: 2703257273171626329, guid: 2429dec7f529e7c4ab78a82077925eb9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

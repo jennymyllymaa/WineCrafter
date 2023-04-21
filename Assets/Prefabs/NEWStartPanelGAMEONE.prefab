@@ -538,7 +538,7 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:9074d0cad90244043bc40cfb7aaeaa3f
     m_TableEntryReference:
-      m_KeyId: 14864277024768
+      m_KeyId: 3217493425631232
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -977,7 +977,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: Collect ingredients to basket
+  m_Text: Collect ingredients to basket.
 --- !u!114 &2703257272989676507
 MonoBehaviour:
   m_ObjectHideFlags: 0

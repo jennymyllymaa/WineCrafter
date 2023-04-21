@@ -657,8 +657,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: Well done! Next Mash the ingredients by tabbing the berries as fast as
-    you can!
+  m_Text: Amazing! Release the wine by pressing the button. Try to get the drop to
+    hit the bottle!
 --- !u!114 &4972191002310545844
 MonoBehaviour:
   m_ObjectHideFlags: 0

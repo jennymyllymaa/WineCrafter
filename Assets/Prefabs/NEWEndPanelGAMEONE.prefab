@@ -599,7 +599,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: Well done! Next Mash the ingredients by tabbing the berries as fast as
+  m_Text: Well done! Next mash the ingredients by tapping the berries as fast as
     you can!
 --- !u!114 &2703257272989676507
 MonoBehaviour:

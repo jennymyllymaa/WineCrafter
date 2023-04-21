@@ -51,6 +51,10 @@ MonoBehaviour:
     m_Key: GameOverGame3
     m_Metadata:
       m_Items: []
+  - m_Id: 3217493425631232
+    m_Key: InstructionsGame1Welcome
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
