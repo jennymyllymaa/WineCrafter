@@ -14,7 +14,7 @@ namespace WineCrafter
         void Start()
         {
 
-            if(SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Score"))
+            if(SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Score") || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Menu"))
             {
                 highScoreNumber = PlayerPrefs.GetInt("personalHighScore", 0);
 

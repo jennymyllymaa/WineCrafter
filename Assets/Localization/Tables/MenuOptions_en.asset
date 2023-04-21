@@ -62,6 +62,22 @@ MonoBehaviour:
     m_Localized: Continue
     m_Metadata:
       m_Items: []
+  - m_Id: 1066645853483008
+    m_Localized: Reset Highscore
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1066837696753664
+    m_Localized: HIGHSCORE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1066949764362240
+    m_Localized: points
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1067049970479104
+    m_Localized: Close
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

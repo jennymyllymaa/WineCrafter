@@ -19,16 +19,18 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 34979688448
-    m_Localized: Collect berries and tomatoes, but not the sticks and leaves.
+    m_Localized: Collect wine ingredients to the basket but be careful of sticks
+      and leaves! They will substract your points.
     m_Metadata:
       m_Items: []
   - m_Id: 738347692032
-    m_Localized: Mash the ingredients by tabbing the berries as fast as you can!
+    m_Localized: Mash the ingredients in the bucket by tapping them quickly to collect
+      as much wine as you can.
     m_Metadata:
       m_Items: []
   - m_Id: 1101373091840
-    m_Localized: Release the wine by pressing the button. Try to get the wine hit
-      the bottle!
+    m_Localized: Pour the wine by pressing the button at the right moment, and try
+      to make the wine drop hit the bottle below to earn points.
     m_Metadata:
       m_Items: []
   - m_Id: 14864277024768
@@ -36,13 +38,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 15106334502912
-    m_Localized: Well done! Next mash the ingredients by tapping the berries as fast
-      as you can!
+    m_Localized: Well done! Next mash the ingredients by tapping them in the bucket
+      as fast as you can!
     m_Metadata:
       m_Items: []
   - m_Id: 15182385623040
-    m_Localized: Amazing! Release the wine by pressing the button. Try to get the
-      drop to hit the bottle!
+    m_Localized: Amazing! Pour the wine by pressing the button and try to get the
+      wine drop hit the bottle below.
     m_Metadata:
       m_Items: []
   - m_Id: 16337333366784
@@ -52,12 +54,12 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 16570020769792
     m_Localized: Oh no! You didn't mash enough ingredients. Only mashed ingredients
-      can be bottled into wine.
+      can be prosessed into wine. Better luck next time!
     m_Metadata:
       m_Items: []
   - m_Id: 1068874224283648
-    m_Localized: Oh no! You didn't bottle anything. Hope you have better luck next
-      time!
+    m_Localized: Oh no! Looks like you're out of wine and didn't fill any bottles!
+      Don't worry, you can always try again.
     m_Metadata:
       m_Items: []
   - m_Id: 3217493425631232

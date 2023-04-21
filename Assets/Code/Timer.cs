@@ -28,6 +28,9 @@ public class Timer : MonoBehaviour
 
     public AudioSource ASChangeLevel;
 
+    //for animation control
+    public GameObject uiTimer;
+
     private void Start()
     {
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Game2"))
@@ -63,6 +66,8 @@ public class Timer : MonoBehaviour
                 gameOverParent = GameObject.Find("Canvas");
                 paneeli = gameOverParent.transform.Find("EndPanel").gameObject;
                 paneeli.SetActive(true);
+
+
 
                 /* ASChangeLevel.Play(); */ //tehdään tällekkin oma script todennäköisesti ja pois täältä.
             }

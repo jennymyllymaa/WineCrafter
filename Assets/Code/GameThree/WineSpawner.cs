@@ -18,13 +18,10 @@ namespace WineCrafter
         public Text triesText;
         private int triesScore = 0;
 
-
         // t‰t‰ ei en‰‰ tarvita jos kaikki toimii! poista jos ei bugaa kolmosen pisteet. private int usedTries = 0;
         private Vector3 spawnPosition;
         private CircleCollider2D col;
-
         public bool outOfTries = false;
-
 
         //start called only to make UI text appear right in the beginning
         private void Start()
@@ -41,7 +38,6 @@ namespace WineCrafter
             col = GetComponent<CircleCollider2D>();
             Vector2 colCenter = col.bounds.center;
             spawnPosition = new Vector3(colCenter.x, colCenter.y, transform.position.z);
-
 
         }
 
@@ -68,25 +64,33 @@ namespace WineCrafter
 
             }
 
-            // UUSI KOODI NOORALTA.
-            //kun vuorot loppuu ja jos on saanut edes yhden pisteen, tulee score scene
-            //jos taas vuorot loppuu JA ei ole yht‰‰n scorea, tulee game over paneeli ja peli p‰‰ttyy
-
-            if (amountOfTries == 0 && PlayerPrefs.GetInt("currentGameScore") != 0)
+            // Start checking the final points after running out of tries
+            if (amountOfTries == 0 && !outOfTries)
             {
-                EndOfGame();
-                
-            }
-
-
-            if (amountOfTries == 0 && PlayerPrefs.GetInt("currentGameScore") == 0)
-            {
-
-                EndOfGameFail();
-
+                outOfTries = true;
+                StartCoroutine(CheckScore());
             }
 
         }
+
+        // NEW
+        // waits for a second before starting the score check process
+        //Triggers either Score scene or Game over panel
+        private IEnumerator CheckScore()
+        {
+            // wait for a short delay to allow the game to calculate the final score
+            yield return new WaitForSeconds(1);
+
+            if (PlayerPrefs.GetInt("currentGameScore") != 0)
+            {
+                EndOfGame();
+            }
+            else
+            {
+                EndOfGameFail();
+            }
+        }
+
 
         // alla olevaa ei k‰ytet‰ ollenkaan, poista jos ei tule k‰yttˆ‰
         public int GetAmount()
@@ -114,7 +118,7 @@ namespace WineCrafter
 
         private IEnumerator WaitCoroutine()
         {
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(0.5f);
 
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
@@ -136,7 +140,6 @@ namespace WineCrafter
             paneeli = gameOverParent.transform.Find("NEWGAMEOVERPANEL").gameObject;
             paneeli.SetActive(true);
             Time.timeScale = 0;
-
 
         }
     }

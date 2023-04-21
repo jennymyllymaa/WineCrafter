@@ -62,6 +62,22 @@ MonoBehaviour:
     m_Localized: Jatka
     m_Metadata:
       m_Items: []
+  - m_Id: 1066645853483008
+    m_Localized: Nollaa pisteet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1066837696753664
+    m_Localized: "ENN\xC4TYS"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1066949764362240
+    m_Localized: "pistett\xE4"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1067049970479104
+    m_Localized: Sulje
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

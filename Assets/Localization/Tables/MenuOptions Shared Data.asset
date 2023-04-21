@@ -60,19 +60,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1066645853483008
-    m_Key: New Entry
+    m_Key: Reset
     m_Metadata:
       m_Items: []
   - m_Id: 1066837696753664
-    m_Key: New Entry 1
+    m_Key: HIGHSCORECAPS
     m_Metadata:
       m_Items: []
   - m_Id: 1066949764362240
-    m_Key: New Entry 2
+    m_Key: Points
     m_Metadata:
       m_Items: []
   - m_Id: 1067049970479104
-    m_Key: New Entry 3
+    m_Key: Close
     m_Metadata:
       m_Items: []
   - m_Id: 1067568289984512
