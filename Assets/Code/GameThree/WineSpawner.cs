@@ -75,18 +75,15 @@ namespace WineCrafter
             if (amountOfTries == 0 && PlayerPrefs.GetInt("currentGameScore") != 0)
             {
                 EndOfGame();
+                
             }
 
 
             if (amountOfTries == 0 && PlayerPrefs.GetInt("currentGameScore") == 0)
             {
-                GameObject gameOverParent;
-                GameObject paneeli;
 
-                gameOverParent = GameObject.Find("Canvas");
-                paneeli = gameOverParent.transform.Find("NEWGAMEOVERPANEL").gameObject;
-                paneeli.SetActive(true);
-                Time.timeScale = 0;
+                EndOfGameFail();
+
             }
 
         }
@@ -112,14 +109,35 @@ namespace WineCrafter
 
         public void EndOfGame()
         {
-            StartCoroutine(SomeCoroutine());
+            StartCoroutine(WaitCoroutine());
         }
 
-        private IEnumerator SomeCoroutine()
+        private IEnumerator WaitCoroutine()
         {
             yield return new WaitForSeconds(1);
 
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+        }
+
+        public void EndOfGameFail()
+        {
+            StartCoroutine(FailCoroutine());
+        }
+
+        private IEnumerator FailCoroutine()
+        {
+            yield return new WaitForSeconds(1);
+
+            GameObject gameOverParent;
+            GameObject paneeli;
+
+            gameOverParent = GameObject.Find("Canvas");
+            paneeli = gameOverParent.transform.Find("NEWGAMEOVERPANEL").gameObject;
+            paneeli.SetActive(true);
+            Time.timeScale = 0;
+
+
         }
     }
 }

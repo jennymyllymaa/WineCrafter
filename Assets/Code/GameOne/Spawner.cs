@@ -56,32 +56,38 @@ namespace WineCrafter
     public class Spawner : MonoBehaviour
     {
         [SerializeField] private GameObject[] fallingObjects;
-        private BoxCollider2D col;
+        // poistoon jos kaikki ok private BoxCollider2D col;
         private float x1, x2;
         private float minSpawnDelayStart = 0.5f; // minimum time between spawns
         private float minSpawnDelayEnd = 0.1f;
         private float maxSpawnDelay = 2f; // maximum time between spawns
         private float lastSpawnTime; // time of last spawn
+        private Camera cam;
 
-        //float cameraHeight;
-        //float cameraWidth;
 
-        // Start is called before the first frame update
-
-        /*private void Start()
-        {
-            Camera cam = Camera.main;
-            cameraHeight = 2f * cam.orthographicSize;
-            cameraWidth = cameraHeight * cam.aspect;
-            Debug.Log("Screen:" + cameraWidth);
-            transform.localScale = new Vector3(cameraWidth, 1, 0);
-        }*/
         void Awake()
         {
 
-            col = GetComponent<BoxCollider2D>();
+             // poistoon jos kaikki ok
+             // col = GetComponent<BoxCollider2D>();
+            cam = Camera.main;
+
+            // Poistoon jos ongelmia spawnerissa ei testeissä ilmene
+            /* Vector2 bottomLeft = (Vector2)cam.ScreenToWorldPoint(new Vector3(0, 0, cam.nearClipPlane)); */
+
+            Vector2 topLeft = (Vector2)cam.ScreenToWorldPoint(new Vector3(100, cam.pixelHeight, cam.nearClipPlane));
+            Vector2 topRight = (Vector2)cam.ScreenToWorldPoint(new Vector3(cam.pixelWidth - 100, cam.pixelHeight, cam.nearClipPlane));
+
+            x1 = topLeft.x;
+            x2 = topRight.x;
+
+            
+            
+            /*  Poistoon jos ongelmia ei ilmene
             x1 = transform.position.x - col.bounds.size.x / 2f;
             x2 = transform.position.x + col.bounds.size.x / 2f;
+            */
+
 
             //Initialize lastSpawnTime to the current time
             lastSpawnTime = Time.time;
@@ -123,6 +129,7 @@ namespace WineCrafter
             spawnPos.x = Random.Range(x1, x2);
             Instantiate(fallingObjects[Random.Range(0, fallingObjects.Length)], spawnPos, Quaternion.identity);
         }
+
     }
 }
 
