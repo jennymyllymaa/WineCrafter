@@ -494,7 +494,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 349426094}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.06, y: 3.33, z: 0}
+  m_LocalPosition: {x: 1.068, y: 3.374, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -678,6 +678,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 362538298}
   m_CullTransparentMesh: 1
+--- !u!1 &365083869 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2068476137181110868, guid: c736a0a7e34a6264094f51fb7fcbc9f2, type: 3}
+  m_PrefabInstance: {fileID: 2068476137201398341}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &365083870
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365083869}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4de148329a02442429cdab18e54f2a0d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 2
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &397596606
 GameObject:
   m_ObjectHideFlags: 0
@@ -1314,6 +1339,14 @@ PrefabInstance:
     - target: {fileID: 2703257272989676506, guid: 0bc80b57ec7d8ec4f985110566f0c5e1, type: 3}
       propertyPath: m_FontData.m_HorizontalOverflow
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2703257273171626329, guid: 0bc80b57ec7d8ec4f985110566f0c5e1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1483846041}
+    - target: {fileID: 2703257273171626329, guid: 0bc80b57ec7d8ec4f985110566f0c5e1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Play
       objectReference: {fileID: 0}
     - target: {fileID: 5481979630210024748, guid: 0bc80b57ec7d8ec4f985110566f0c5e1, type: 3}
       propertyPath: m_PlayOnAwake
@@ -2283,6 +2316,10 @@ PrefabInstance:
       propertyPath: triesText
       value: 
       objectReference: {fileID: 818502377}
+    - target: {fileID: 4770158335072339518, guid: 141e2f04d38d8f14d968230ec75facc2, type: 3}
+      propertyPath: uiWineDrops
+      value: 
+      objectReference: {fileID: 365083869}
     - target: {fileID: 4770158335072339518, guid: 141e2f04d38d8f14d968230ec75facc2, type: 3}
       propertyPath: amountOfTries
       value: 10

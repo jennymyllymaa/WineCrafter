@@ -55,6 +55,18 @@ MonoBehaviour:
     m_Key: InstructionsGame1Welcome
     m_Metadata:
       m_Items: []
+  - m_Id: 4316605575245824
+    m_Key: OptionsDetailedGuide1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4316671283212288
+    m_Key: OptionsDetailedGuide2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4316809439391744
+    m_Key: OptionsDetailedGuide3
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 namespace WineCrafter
 {
@@ -17,6 +18,9 @@ namespace WineCrafter
         // these two are used for the ui score text
         public Text triesText;
         private int triesScore = 0;
+
+        // For animation calling
+        public GameObject uiWineDrops;
 
         // t‰t‰ ei en‰‰ tarvita jos kaikki toimii! poista jos ei bugaa kolmosen pisteet. private int usedTries = 0;
         private Vector3 spawnPosition;
@@ -38,6 +42,7 @@ namespace WineCrafter
             col = GetComponent<CircleCollider2D>();
             Vector2 colCenter = col.bounds.center;
             spawnPosition = new Vector3(colCenter.x, colCenter.y, transform.position.z);
+            
 
         }
 
@@ -103,6 +108,10 @@ namespace WineCrafter
         {
             triesScore = amountOfTries;
             triesText.text = "x " + triesScore.ToString();
+
+            //Play animation for tries
+            Animator animTries = uiWineDrops.GetComponent<Animator>();
+            animTries.Play("TriesDeducted");
 
         }
 

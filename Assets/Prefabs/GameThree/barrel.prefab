@@ -160,7 +160,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: a7a5944d7b8392240a4db0951d00d5fb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a48ab275832561640bf48d0adc23384d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -199,3 +199,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff3411ab80a3e3745a9c132369b0a7f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wineDrop: {fileID: 0}
+  triesText: {fileID: 0}
+  outOfTries: 0

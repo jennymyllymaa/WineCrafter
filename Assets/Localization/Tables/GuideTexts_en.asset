@@ -20,7 +20,7 @@ MonoBehaviour:
   m_TableData:
   - m_Id: 34979688448
     m_Localized: Collect wine ingredients to the basket but be careful of sticks
-      and leaves! They will substract your points.
+      and leaves! They will deduct your points and reduce the time limit.
     m_Metadata:
       m_Items: []
   - m_Id: 738347692032
@@ -64,6 +64,26 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 3217493425631232
     m_Localized: Welcome to Teiskon Winery!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4316605575245824
+    m_Localized: Collect wine ingredients by moving the basket with your finger.
+      Each collected ingredient adds points and gives you extra time to your timer.
+      Remember to avoid sticks and leaves as they will deduct points and reduce the
+      time limit.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4316671283212288
+    m_Localized: Tap the ingredients quickly in the bucket to mash them and collect
+      as much wine as possible. Each tap fills the progress bar and earns you one
+      point when it reaches full. The time limit is half the amount of ingredients
+      you collected in the first game.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4316809439391744
+    m_Localized: Press the button at the right moment to pour the wine from the barrel,
+      and try to make the wine drop hit the bottle. You will earn one point for each
+      filled bottle, and the game will end when you have used all your wine drops.
     m_Metadata:
       m_Items: []
   references:

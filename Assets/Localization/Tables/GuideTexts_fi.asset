@@ -20,7 +20,8 @@ MonoBehaviour:
   m_TableData:
   - m_Id: 34979688448
     m_Localized: "Ker\xE4\xE4 viininvalmistusaineita koriin, mutta varo ker\xE4\xE4m\xE4st\xE4
-      tikkuja tai lehti\xE4! Ne v\xE4hent\xE4v\xE4t pisteit\xE4si."
+      tikkuja tai lehti\xE4! Ne v\xE4hent\xE4v\xE4t pisteit\xE4si ja k\xE4ytett\xE4viss\xE4
+      olevaa aikaa."
     m_Metadata:
       m_Items: []
   - m_Id: 738347692032
@@ -66,6 +67,28 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 3217493425631232
     m_Localized: Tervetuloa Teiskon Viinitilalle!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4316605575245824
+    m_Localized: "Ker\xE4\xE4 ainesosia liikuttamalla koria sormellasi. Jokainen
+      ker\xE4tty ainesosa antaa pisteit\xE4 ja antaa sinulle lis\xE4aikaa ajastimeen.
+      Muista v\xE4ltt\xE4\xE4 oksia ja lehti\xE4, sill\xE4 ne v\xE4hent\xE4v\xE4t
+      pisteit\xE4si ja pienent\xE4v\xE4t aikarajaa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4316671283212288
+    m_Localized: "Survo ainekset n\xE4pytt\xE4m\xE4ll\xE4 sangossa olevia aineksia
+      nopeasti ker\xE4t\xE4ksesi mahdollisimman paljon viini\xE4. Jokainen n\xE4p\xE4ytys
+      t\xE4ytt\xE4\xE4 edistymispalkkia ja antaa sinulle yhden pisteen, kun se on
+      t\xE4ynn\xE4. Aikaraja on puolet ensimm\xE4isess\xE4 peliss\xE4 ker\xE4\xE4miesi
+      ainesosien m\xE4\xE4r\xE4st\xE4."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4316809439391744
+    m_Localized: "Paina nappia oikealla hetkell\xE4 valuttaaksesi viini\xE4 tynnyrist\xE4
+      ja yrit\xE4 saada viinipisara osumaan alla olevaan pulloon. Saat yhden pisteen
+      jokaisesta t\xE4ytetyst\xE4 pullosta, ja peli p\xE4\xE4ttyy kun olet k\xE4ytt\xE4nyt
+      kaikki viinipisarasi."
     m_Metadata:
       m_Items: []
   references:

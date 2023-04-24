@@ -21,7 +21,7 @@ TagManager:
   - UI
   - FallingObjects
   - Canvas
-  - 
+  - Confetti
   - 
   - 
   - 
@@ -60,4 +60,7 @@ TagManager:
     locked: 0
   - name: Canvas
     uniqueID: 4258562449
+    locked: 0
+  - name: Confetti
+    uniqueID: 2880825911
     locked: 0
