@@ -12,13 +12,21 @@ namespace WineCrafter
         float gravityScale;
         float gravityMultiplier = 1.2f;
 
+        //TrainingWheelsiä varten haetaan canvasista ScoreManager script
+        GameObject canvas;
+        ScoreManager scoremanager;
+
         void Start()
         {
             //Invokes the method methodName in time seconds, then repeatedly every repeatRate seconds
-            InvokeRepeating("IncreaseGravity", 8.0f, 5.0f);
+            //InvokeRepeating("IncreaseGravity", 8.0f, 5.0f);
+            InvokeRepeating("IncreaseGravity", 10.0f, 5.0f);
 
             //jotta se ei ole nolla ennen ekaa repeatiä
             gravityScale= initialGravityScale;
+
+            canvas = GameObject.Find("Canvas");
+            scoremanager = canvas.GetComponent<ScoreManager>();
 
         }
 
@@ -32,6 +40,11 @@ namespace WineCrafter
 
         void IncreaseGravity()
         {
+            if (scoremanager.GetTrainingWheels() == true)
+            {
+                scoremanager.SetTrainingWheelsToFalse();
+                Debug.Log("Training wheels off!");
+            }
             gravityScale = gravityScale * gravityMultiplier;
 
 

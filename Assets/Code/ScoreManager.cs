@@ -17,6 +17,13 @@ namespace WineCrafter
 
         Timer timer;
 
+        private bool trainingWheelsOn = true;
+
+        private int subractablePoint = 1;
+
+        //Kakkospelin pisteääntä varten
+        public AudioSource barSound;
+
         private void Awake()
         {
             instance = this;
@@ -83,20 +90,26 @@ namespace WineCrafter
                 timer.AddSecond();
             }
 
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Game2"))
+            {
+                barSound.Play();
+            }
+
             scoreText.text = "x " + score.ToString();
 
         }
 
         public void SubtractPoint()
         {
-            score = score - 5;
+
+            score = score - subractablePoint;
 
             
             PlayerPrefs.SetInt("currentGameScore", score);
 
             if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Game1"))
             {
-                timer.SubtractSecond();
+                timer.SubtractSecond(subractablePoint);
             }
 
             scoreText.text = "x " + score.ToString();
@@ -136,6 +149,19 @@ namespace WineCrafter
         public int GetTries()
         {
             return score;
+        }
+
+        //TrainingWheels ykköspeliin:
+
+        public bool GetTrainingWheels()
+        {
+            return trainingWheelsOn;
+        }
+
+        public void SetTrainingWheelsToFalse()
+        {
+            trainingWheelsOn = false;
+            subractablePoint= 5;
         }
 
     }

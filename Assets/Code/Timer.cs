@@ -98,9 +98,9 @@ public class Timer : MonoBehaviour
         currentTime++;
     }
 
-    public void SubtractSecond()
+    public void SubtractSecond(int amount)
     {
-        currentTime = currentTime - 5;
+        currentTime = currentTime - amount;
     }
 
 

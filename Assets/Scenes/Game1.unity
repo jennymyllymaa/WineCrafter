@@ -636,7 +636,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2703257272905438962, guid: 2429dec7f529e7c4ab78a82077925eb9, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2703257272905438962, guid: 2429dec7f529e7c4ab78a82077925eb9, type: 3}
       propertyPath: m_AnchorMax.x
@@ -868,7 +868,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7034708229322046316, guid: b3a1ebe0cdec9344497fbc8fc4ffd648, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7034708229322046316, guid: b3a1ebe0cdec9344497fbc8fc4ffd648, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1351,7 +1351,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2691402316848301457, guid: 4f9b43f32a8e0f4489bfc7edb65b6383, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2691402316848301457, guid: 4f9b43f32a8e0f4489bfc7edb65b6383, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2001,7 +2001,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2703257272905438962, guid: 5ff7609579a7ef1418d67ab04aa829ef, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2703257272905438962, guid: 5ff7609579a7ef1418d67ab04aa829ef, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2383,7 +2383,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2703257272905438962, guid: 5411deed96e74934aa89bcb64c6c4d27, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2703257272905438962, guid: 5411deed96e74934aa89bcb64c6c4d27, type: 3}
       propertyPath: m_AnchorMax.x
@@ -3097,6 +3097,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5514699798783840626, guid: 60ac1c7ea1cf8de4f911d3a30b76a950, type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5514699798783840626, guid: 60ac1c7ea1cf8de4f911d3a30b76a950, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 320460533fc9c9d44a5fb90b1a3d358a, type: 3}
     - target: {fileID: 5514699798783840629, guid: 60ac1c7ea1cf8de4f911d3a30b76a950, type: 3}
       propertyPath: m_RootOrder
       value: 12
