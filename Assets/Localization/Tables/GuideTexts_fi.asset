@@ -45,8 +45,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 15182385623040
-    m_Localized: "Upeeta! Valuta viini\xE4 painamalla painiketta. Yrit\xE4 saada
-      viini osumaan alla olevaan pulloon!"
+    m_Localized: "Upeaa! Valuta viini\xE4 painamalla painiketta. Yrit\xE4 saada viini
+      osumaan alla olevaan pulloon!"
     m_Metadata:
       m_Items: []
   - m_Id: 16337333366784
@@ -89,6 +89,33 @@ MonoBehaviour:
       ja yrit\xE4 saada viinipisara osumaan alla olevaan pulloon. Saat yhden pisteen
       jokaisesta t\xE4ytetyst\xE4 pullosta, ja peli p\xE4\xE4ttyy kun olet k\xE4ytt\xE4nyt
       kaikki viinipisarasi."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5402417834405888
+    m_Localized: "\nTeiskon Viini on tamperelainen perheyritys, jossa valmistetaan
+      viinej\xE4 k\xE4sity\xF6n\xE4 kotimaisista marjoista yli 20 vuoden kokemuksella.
+      Teiskon viineiss\xE4 maistuvat luonnolliset aidot maut, jotka syntyv\xE4t puhtaista
+      kotimaisista raaka-aineista. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5402464022081536
+    m_Localized: 'https://www.teiskonviini.fi/ '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5402487636013056
+    m_Localized: "Peli on osa Tampereen ammattikorkeakoulun tietojenk\xE4sittelyn
+      tutkinto-ohjelman peliprojektia. Projekti on tehty yhteisty\xF6ss\xE4 VIRMA
+      \u2013hankkeen kanssa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5419559627698176
+    m_Localized: https://webpages.tuni.fi/22tiko3c/
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5420079587176448
+    m_Localized: "Projektitiimi / @manseplaygrounds\n\r\nJonna Kyll\xF6nen - Scrum
+      master\n\r\nNoora Vainionp\xE4\xE4 - Ohjelmoija\n\r\nJenny Myllymaa \u2013
+      Ohjelmoija\n\r\nMatias Lepp\xE4nen - Graafikko\n\r\nVera Vuorio \u2013 Graafikko\n\n"
     m_Metadata:
       m_Items: []
   references:

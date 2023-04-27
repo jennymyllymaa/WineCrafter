@@ -86,6 +86,34 @@ MonoBehaviour:
       filled bottle, and the game will end when you have used all your wine drops.
     m_Metadata:
       m_Items: []
+  - m_Id: 5402417834405888
+    m_Localized: "\nTeiskon Winery is a family business from Tampere, where wines
+      are made by hand from Finnish berries with over 20 years of experience. In
+      Teiskon Winery\u2019s wines, you can taste the natural, authentic flavors that
+      are created from pure Finnish ingredients."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5402464022081536
+    m_Localized: 'https://www.teiskonviini.fi/en/home/ '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5402487636013056
+    m_Localized: The game is part of the game project of Tampere University of Applied
+      Sciences'  Degree Programme in Business Information Systems. The project was
+      made in cooperation with the VIRMA project.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5419559627698176
+    m_Localized: https://webpages.tuni.fi/22tiko3c/en.html
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5420079587176448
+    m_Localized: "Project Team / @manseplaygrounds\n\r\nJonna Kyll\xF6nen - Scrum
+      master\n\r\nNoora Vainionp\xE4\xE4 - Programmer\n\r\nJenny Myllymaa \u2013
+      Programmer\n\r\nMatias Lepp\xE4nen - Graphic designer\n\r\nVera Vuorio \u2013
+      Graphic designer\n\n"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
