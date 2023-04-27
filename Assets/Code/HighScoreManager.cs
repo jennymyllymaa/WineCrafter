@@ -24,7 +24,7 @@ namespace WineCrafter
                     highScoreNumber = PlayerPrefs.GetInt("personalHighScore", 0);
                 }
 
-                // Noora muutti pisteet niin, ett‰ tulee pelkk‰ pistem‰‰r‰ ja highscore teksti on eri tiedostossa localizationin takia
+                // Muutettu pisteet niin, ett‰ tulee pelkk‰ pistem‰‰r‰ ja highscore teksti on eri tiedostossa localizationin takia
                 highScore.text = highScoreNumber.ToString();
                 PlayerPrefs.SetInt("currentGameScore", 0);
             }
@@ -34,6 +34,10 @@ namespace WineCrafter
         public void ResetHighScore()
         {
             PlayerPrefs.SetInt("personalHighScore", 0);
+
+            // Muutettu niin ett‰ resetattu highscore tulee heti n‰kyviin menu paneeliin
+            highScoreNumber = 0;
+            highScore.text = highScoreNumber.ToString();
         }
 
 
