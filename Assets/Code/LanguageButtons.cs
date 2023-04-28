@@ -12,11 +12,19 @@ namespace WineCrafter
         public Button englishButton;
         public Button finnishButton;
 
-        //private const string languageKey = "language";
+        
 
         void Start()
-        {
+        {   
+            if(PlayerPrefs.GetString("firsttime", "true") == "true" )
+            {
+                PlayerPrefs.SetString("languageKey", "en");
+                PlayerPrefs.SetString("firsttime", "false");
+
+            }
+
             string savedLanguage = PlayerPrefs.GetString("languageKey", "en");
+
             SetLocale(savedLanguage);
             Debug.Log(savedLanguage);
 

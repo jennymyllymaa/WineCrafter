@@ -2296,6 +2296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 2115368161}
+  barSound: {fileID: 0}
 --- !u!114 &1496508058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2485,6 +2486,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 11.3
       objectReference: {fileID: 0}
+    - target: {fileID: 2703257272989676502, guid: 5411deed96e74934aa89bcb64c6c4d27, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2703257272989676506, guid: 5411deed96e74934aa89bcb64c6c4d27, type: 3}
       propertyPath: m_Text
       value: "Hienoa! Seuraavaksi survo sangossa olevat ainekset n\xE4pytt\xE4m\xE4ll\xE4
@@ -2506,12 +2511,55 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Play
       objectReference: {fileID: 0}
+    - target: {fileID: 3442121599935788523, guid: 5411deed96e74934aa89bcb64c6c4d27, type: 3}
+      propertyPath: m_UpdateString.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3442121599935788523, guid: 5411deed96e74934aa89bcb64c6c4d27, type: 3}
+      propertyPath: m_UpdateString.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3442121599935788523, guid: 5411deed96e74934aa89bcb64c6c4d27, type: 3}
+      propertyPath: m_UpdateString.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1558283985}
+    - target: {fileID: 3442121599935788523, guid: 5411deed96e74934aa89bcb64c6c4d27, type: 3}
+      propertyPath: m_UpdateString.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3442121599935788523, guid: 5411deed96e74934aa89bcb64c6c4d27, type: 3}
+      propertyPath: m_UpdateString.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_text
+      objectReference: {fileID: 0}
+    - target: {fileID: 3442121599935788523, guid: 5411deed96e74934aa89bcb64c6c4d27, type: 3}
+      propertyPath: m_UpdateString.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.UI.Text, UnityEngine.UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 3442121599935788523, guid: 5411deed96e74934aa89bcb64c6c4d27, type: 3}
+      propertyPath: m_UpdateString.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4803214284894282357, guid: 5411deed96e74934aa89bcb64c6c4d27, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8311402780578073043, guid: 5411deed96e74934aa89bcb64c6c4d27, type: 3}
+      propertyPath: m_Text
+      value: x 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5411deed96e74934aa89bcb64c6c4d27, type: 3}
+--- !u!114 &1558283985 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2703257272321091842, guid: 5411deed96e74934aa89bcb64c6c4d27, type: 3}
+  m_PrefabInstance: {fileID: 1558283984}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1739636584 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2690015937154627160, guid: fbebc6bf3d4b6ff41a85e5164b48989e, type: 3}

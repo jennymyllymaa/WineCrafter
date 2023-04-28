@@ -61,16 +61,68 @@ public class Timer : MonoBehaviour
         {
             endOfGame = true;
 
-            if (score > 0)
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Game1"))
+            {
+                if(score > 4)
+                {
+                    Debug.Log("score kunnossa");
+                    gameOverParent = GameObject.Find("Canvas");
+                    paneeli = gameOverParent.transform.Find("EndPanel").gameObject;
+                    paneeli.SetActive(true);
+                }
+                else
+                {
+                    gameOverParent = GameObject.Find("Canvas");
+                    paneeli = gameOverParent.transform.Find("NEWGAMEOVERPANEL").gameObject;
+                    paneeli.SetActive(true);
+                }
+            }
+
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Game2"))
+            {
+                if(score > 0 )
+                {
+                    gameOverParent = GameObject.Find("Canvas");
+                    paneeli = gameOverParent.transform.Find("EndPanel").gameObject;
+                    paneeli.SetActive(true);
+                }
+                else
+                {
+                    gameOverParent = GameObject.Find("Canvas");
+                    paneeli = gameOverParent.transform.Find("NEWGAMEOVERPANEL").gameObject;
+                    paneeli.SetActive(true);
+
+                }
+
+            }
+
+
+            /*if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Game1") && score > 0)
+            {
+                Debug.Log("score kunnossa");
+                gameOverParent = GameObject.Find("Canvas");
+                paneeli = gameOverParent.transform.Find("EndPanel").gameObject;
+                paneeli.SetActive(true);
+            }
+
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Game2") && score > 0)
+            {
+                gameOverParent = GameObject.Find("Canvas");
+                paneeli = gameOverParent.transform.Find("EndPanel").gameObject;
+                paneeli.SetActive(true);
+            }*/
+
+
+
+
+            /*if (score > 0)
             {
                 gameOverParent = GameObject.Find("Canvas");
                 paneeli = gameOverParent.transform.Find("EndPanel").gameObject;
                 paneeli.SetActive(true);
 
-
-
                 /* ASChangeLevel.Play(); */ //tehdään tällekkin oma script todennäköisesti ja pois täältä.
-            }
+            /*}
 
             else 
             {
@@ -81,7 +133,7 @@ public class Timer : MonoBehaviour
                 /* gameOver.Play();*/  //siirretty omaan scriptiin ja kiinnitetty game over paneeleihin.
 
 
-            }
+            /*}*/
 
             Time.timeScale = 0;
         }

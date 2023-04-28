@@ -30,7 +30,6 @@ namespace WineCrafter
                 ASPoint.time = 0.1f;
                 ASPoint.Play();
                 isTriggered = true;
-                //Destroy(GameObject.FindWithTag("Marjat"));
                 Destroy(collision.gameObject);
                 points = points + 1;
                 ScoreManager.instance.AddPoint();
@@ -40,8 +39,9 @@ namespace WineCrafter
             if (collision.gameObject.tag == "Roska")
             {
                 ASMinus.Play();
+                Handheld.Vibrate();
                 isTriggered = true;
-                //Destroy(GameObject.FindWithTag("Roska"));
+ 
                 Destroy(collision.gameObject);
                 points = points - 1;
                 ScoreManager.instance.SubtractPoint();

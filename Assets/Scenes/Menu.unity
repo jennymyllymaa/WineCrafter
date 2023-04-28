@@ -566,6 +566,7 @@ GameObject:
   - component: {fileID: 596865008}
   - component: {fileID: 596865009}
   - component: {fileID: 596865007}
+  - component: {fileID: 596865010}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -696,11 +697,24 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 596865001}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b23c2aa5f47732479df6a7a9a310971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &596865010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596865001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c920652f474cd347bace9d7d81a49ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeSlider: {fileID: 1824268802}
 --- !u!1 &614318663 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1114941468717885488, guid: b937d8e52f6fcab4d808242d0d49408d, type: 3}
@@ -885,7 +899,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Credits
+  m_Text: 
 --- !u!222 &677322816
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2562,6 +2576,18 @@ PrefabInstance:
         you collected in the first game.
       objectReference: {fileID: 0}
     - target: {fileID: 4821446496516102240, guid: 98ffa171c59311647b1f0fffd667dc88, type: 3}
+      propertyPath: m_Color.b
+      value: 0.23137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821446496516102240, guid: 98ffa171c59311647b1f0fffd667dc88, type: 3}
+      propertyPath: m_Color.g
+      value: 0.4627451
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821446496516102240, guid: 98ffa171c59311647b1f0fffd667dc88, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8862745
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821446496516102240, guid: 98ffa171c59311647b1f0fffd667dc88, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 90
       objectReference: {fileID: 0}
@@ -3274,7 +3300,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Options
+  m_Text: 
 --- !u!222 &1594268112
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3831,6 +3857,17 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &1824268802 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4467610309125789048, guid: 21144d41c00f99a4ca925ce6a62e0110, type: 3}
+  m_PrefabInstance: {fileID: 8143323110962394229}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1825940990 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9100519597397047535, guid: b937d8e52f6fcab4d808242d0d49408d, type: 3}
@@ -4461,7 +4498,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Quit
+  m_Text: 
 --- !u!222 &2084561093
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4996,6 +5033,18 @@ PrefabInstance:
         drops.
       objectReference: {fileID: 0}
     - target: {fileID: 7113733375868012174, guid: b937d8e52f6fcab4d808242d0d49408d, type: 3}
+      propertyPath: m_Color.b
+      value: 0.23137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 7113733375868012174, guid: b937d8e52f6fcab4d808242d0d49408d, type: 3}
+      propertyPath: m_Color.g
+      value: 0.4627451
+      objectReference: {fileID: 0}
+    - target: {fileID: 7113733375868012174, guid: b937d8e52f6fcab4d808242d0d49408d, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8862745
+      objectReference: {fileID: 0}
+    - target: {fileID: 7113733375868012174, guid: b937d8e52f6fcab4d808242d0d49408d, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 90
       objectReference: {fileID: 0}
@@ -5378,6 +5427,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1181753242578685145, guid: 98ffa171c59311647b1f0fffd667dc88, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3022671551079563492, guid: 98ffa171c59311647b1f0fffd667dc88, type: 3}
       propertyPath: m_Name
       value: InfoTitle
@@ -5408,6 +5461,18 @@ PrefabInstance:
         ainesosa lis\xE4\xE4 yhden pisteen ja antaa sinulle yhden sekunnin aikaa
         ajastimeesi. Muista v\xE4ltt\xE4\xE4 oksia ja lehti\xE4, sill\xE4 ne v\xE4hent\xE4v\xE4t
         pisteit\xE4si viidell\xE4 ja pienent\xE4v\xE4t aikarajaa viidell\xE4 sekunnilla."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821446496516102240, guid: 98ffa171c59311647b1f0fffd667dc88, type: 3}
+      propertyPath: m_Color.b
+      value: 0.23137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821446496516102240, guid: 98ffa171c59311647b1f0fffd667dc88, type: 3}
+      propertyPath: m_Color.g
+      value: 0.4640911
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821446496516102240, guid: 98ffa171c59311647b1f0fffd667dc88, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8862745
       objectReference: {fileID: 0}
     - target: {fileID: 4821446496516102240, guid: 98ffa171c59311647b1f0fffd667dc88, type: 3}
       propertyPath: m_FontData.m_FontSize
@@ -5769,7 +5834,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7892297019437221197, guid: 5e9c0c7a09457fb44a656c731993eb84, type: 3}
       propertyPath: m_Text
-      value: Play
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7892297019437221197, guid: 5e9c0c7a09457fb44a656c731993eb84, type: 3}
       propertyPath: m_FontData.m_MinSize
@@ -6206,6 +6271,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6670865164951195314, guid: 21144d41c00f99a4ca925ce6a62e0110, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933693529670993816, guid: 21144d41c00f99a4ca925ce6a62e0110, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
