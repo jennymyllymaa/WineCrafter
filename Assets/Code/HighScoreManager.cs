@@ -18,15 +18,20 @@ namespace WineCrafter
             {
                 highScoreNumber = PlayerPrefs.GetInt("personalHighScore", 0);
 
+                // Muutettu pisteet niin, ett‰ tulee pelkk‰ pistem‰‰r‰ ja highscore teksti on eri tiedostossa localizationin takia
+                highScore.text = highScoreNumber.ToString();
+
+            }
+
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Score"))
+            {
                 if (highScoreNumber < PlayerPrefs.GetInt("currentGameScore", 0))
                 {
                     PlayerPrefs.SetInt("personalHighScore", PlayerPrefs.GetInt("currentGameScore", 0));
                     highScoreNumber = PlayerPrefs.GetInt("personalHighScore", 0);
-                }
 
-                // Muutettu pisteet niin, ett‰ tulee pelkk‰ pistem‰‰r‰ ja highscore teksti on eri tiedostossa localizationin takia
-                highScore.text = highScoreNumber.ToString();
-                PlayerPrefs.SetInt("currentGameScore", 0);
+                    highScore.text = highScoreNumber.ToString();
+                }
             }
 
         }
