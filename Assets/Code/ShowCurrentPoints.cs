@@ -12,17 +12,11 @@ namespace WineCrafter
         public Text scoreText;
         private int score;
         
-        // Start is called before the first frame update
+        // Show the currents points at start
         void Start()
         {
             score = PlayerPrefs.GetInt("currentGameScore", 0);
             scoreText.text = "x " + score.ToString();
-
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
 
         }
     }

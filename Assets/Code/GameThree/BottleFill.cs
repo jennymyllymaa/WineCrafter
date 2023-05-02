@@ -20,6 +20,8 @@ namespace WineCrafter
             coll = GetComponent<CapsuleCollider2D>();
         }
 
+        //Destroy winedrop when it reached a bottle and trigger sprite change for bottle
+        //Trigger bottle will sound
         public void OnTriggerEnter2D(Collider2D collision)
         {
             if (collision.gameObject.tag == "WineDrop")
@@ -33,6 +35,7 @@ namespace WineCrafter
 
         }
 
+        //method that changes sprite to a full bottle sprite
         public void ChangeSprite()  
         {
             spriteRenderer.sprite = fullBottle;

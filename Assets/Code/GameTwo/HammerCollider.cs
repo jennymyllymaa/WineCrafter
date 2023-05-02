@@ -5,21 +5,19 @@ using UnityEngine.UI;
 
 namespace WineCrafter
 {
-    public class NuijaCollider : MonoBehaviour
+    public class HammerCollider : MonoBehaviour
     {
-        private BoxCollider2D nuijaColl;
+        private BoxCollider2D hammerColl;
         private int mashPoints = 0;
+        private ProgressBar progressBarScript;
         public ParticleSystem wineBurst;
-
         public GameObject fillBar;
-        public ProgressBar progressBarScript;
-
         public AudioSource ASMash;
 
         // Start is called before the first frame update
         void Start()
         {
-            nuijaColl = GetComponent<BoxCollider2D>();
+            hammerColl = GetComponent<BoxCollider2D>();
 
             fillBar = GameObject.Find("FillBarParent");
 
@@ -27,6 +25,7 @@ namespace WineCrafter
 
         }
 
+        //if hammer collides with bucket, trigger sound and Fillbar points.
         public void OnTriggerEnter2D(Collider2D collision)
         {
             if (collision.gameObject.tag == "Bucket")

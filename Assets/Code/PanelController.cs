@@ -10,6 +10,7 @@ namespace WineCrafter
     {
 
         public GameObject myPanel;
+
         public void OnButtonClick()
         {
             StartCoroutine(DeactivatePanelWithAnimation());
@@ -17,11 +18,16 @@ namespace WineCrafter
 
         private IEnumerator DeactivatePanelWithAnimation()
         {
-            // Get reference to the Animator component on your UI panel
+            // Get reference to the Animator component on  UI panel
             Animator animator = myPanel.GetComponent<Animator>();
 
+
             // Play the animation
-            animator.Play("PopUpPanel0");
+            if (animator != null )
+            {
+                animator.Play("PopUpPanel0");
+            }
+            
 
             // Wait for the animation to finish
             yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);

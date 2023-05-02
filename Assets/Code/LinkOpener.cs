@@ -16,11 +16,11 @@ public class LinkOpener : MonoBehaviour
         // Set the link based on the selected language
         if (currentLocale.name == "English")
         {
-            GetComponent<Text>().text = "<color=blue><u>" + englishLink + "</u></color>";
+            
         }
         else if (currentLocale.name == "Finnish")
         {
-            GetComponent<Text>().text = "<color=blue><u>" + finnishLink + "</u></color>";
+            
         }
     }
 
@@ -38,7 +38,7 @@ public class LinkOpener : MonoBehaviour
             link = finnishLink;
         }
 
-        // Open the link in the user's default browser
+        // Open the link in the browser
         Application.OpenURL(link);
     }
 }

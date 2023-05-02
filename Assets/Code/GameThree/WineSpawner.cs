@@ -12,17 +12,15 @@ namespace WineCrafter
     {
         [SerializeField] public GameObject wineDrop;
 
-        // otettu pois SerializedField amountofTriesist‰ koska haetaan luku Playerprefist‰
         private int amountOfTries;
 
-        // these two are used for the ui score text
+        //used for the ui score text
         public Text triesText;
         private int triesScore = 0;
 
         // For animation calling
         public GameObject uiWineDrops;
 
-        // t‰t‰ ei en‰‰ tarvita jos kaikki toimii! poista jos ei bugaa kolmosen pisteet. private int usedTries = 0;
         private Vector3 spawnPosition;
         private CircleCollider2D col;
         public bool outOfTries = false;
@@ -30,7 +28,6 @@ namespace WineCrafter
         //start called only to make UI text appear right in the beginning
         private void Start()
         {
-            /*UUSI*/
             amountOfTries = PlayerPrefs.GetInt("currentGameScore", 0);
 
             triesScore = amountOfTries;
@@ -48,19 +45,6 @@ namespace WineCrafter
 
         public void Spawn()
         {
-            /* jennyn  vanha koodi, voidaan poistaa jos ei tule kolmosen pistelaskuun bugeja 
-             * 
-             * if (usedTries < amountOfTries)
-            {
-                Debug.Log("spawni aika");
-                Instantiate(wineDrop, spawnPosition, Quaternion.identity);
-                usedTries++;
-                Debug.Log("k‰ytetty: " + usedTries);
-                SubtractTries();
-            } */
-
-            
-            // UUSI KOODI NOORALTA KORVATTU YLLƒ OLEVA VANHA 
             if (amountOfTries > 0)
             {
                 Instantiate(wineDrop, spawnPosition, Quaternion.identity);
@@ -78,7 +62,7 @@ namespace WineCrafter
 
         }
 
-        // NEW
+
         // waits for a second before starting the score check process
         //Triggers either Score scene or Game over panel
         private IEnumerator CheckScore()

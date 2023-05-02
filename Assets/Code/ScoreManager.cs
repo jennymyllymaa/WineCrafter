@@ -43,9 +43,7 @@ namespace WineCrafter
             {
                 LoadPoints();
                 resourcePoints = score / 2;
-                Debug.Log("Resurssi: " + resourcePoints);
                 score = 0;
-                Debug.Log("Pisteet: " + score);
 
             }
 
@@ -53,9 +51,7 @@ namespace WineCrafter
             {
                 LoadPoints();
                 resourcePoints = score;
-                Debug.Log("Resurssi: " + resourcePoints);
                 score = 0;
-                Debug.Log("Pisteet: " + score);
 
                 
             }

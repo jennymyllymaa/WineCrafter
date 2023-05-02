@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class PauseManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    // at the start check if the first game is the active scene and set game to pause 
     void Start()
     {
         
@@ -23,17 +23,13 @@ public class PauseManager : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    //Method that pauses the game
     public void Pause ()
     {
         Time.timeScale = 0f;
     }
 
+    //method that will resume the game
     public void Resume()
     {
         Time.timeScale = 1f;

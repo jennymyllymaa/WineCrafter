@@ -14,12 +14,6 @@ namespace WineCrafter
             col = GetComponent<BoxCollider2D>();
         }
 
-        // Update is called once per frame
-        void FixedUpdate()
-        {
-
-        }
-
         public void OnTriggerEnter2D(Collider2D collision)
         {
             if (collision.gameObject.tag == "WineDrop")

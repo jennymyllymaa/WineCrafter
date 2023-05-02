@@ -26,7 +26,6 @@ namespace WineCrafter
             string savedLanguage = PlayerPrefs.GetString("languageKey", "en");
 
             SetLocale(savedLanguage);
-            Debug.Log(savedLanguage);
 
             englishButton.onClick.AddListener(() =>
             {

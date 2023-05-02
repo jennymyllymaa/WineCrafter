@@ -10,7 +10,6 @@ namespace WineCrafter
 
         public float amplitude = 0.5f;  // the amount of sway
         public float speed = 1f;        // the speed of the sway
-
         private float initialAngle;
 
         // Start is called before the first frame update
@@ -21,7 +20,7 @@ namespace WineCrafter
 
         }
 
-        // Update is called once per frame
+        //rotate or sway the clouds in the background
         void Update()
         {
             float angle = initialAngle + amplitude * Mathf.Sin(speed * Time.time);

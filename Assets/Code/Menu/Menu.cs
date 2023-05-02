@@ -8,33 +8,27 @@ namespace WineCrafter
     public class Menu : MonoBehaviour
     {
 
+        // method to access next scene
         public void PlayGame()
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
+        // method to go back one scene
         public void GoBack()
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         }
 
-        //method to go from third game to main menu
+        //method to go back to main menu scene
         public void GoBackMenu()
         {
             SceneManager.LoadScene(0);
         }
 
-        //temporary method to move to the third game from game one POISTOON
-        public void GoToThirdGame()
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
-        }
-
-
-
+        //exit the game
         public void QuitGame()
         {
-            Debug.Log("QUIT!");
             Application.Quit();
         }
     }

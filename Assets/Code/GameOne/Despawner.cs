@@ -9,17 +9,13 @@ namespace WineCrafter
         private BoxCollider2D col;
         bool isTriggered = false;
 
-        // Start is called before the first frame update
         void Awake()
         {
             col = GetComponent<BoxCollider2D>();
         }
 
-        // Update is called once per frame
-        void FixedUpdate()
-        {
 
-        }
+        // Despawn falling objects when colliding with despawner gameObject
         public void OnTriggerEnter2D(Collider2D collision)
         {
             if (collision.gameObject.tag == "Marjat")

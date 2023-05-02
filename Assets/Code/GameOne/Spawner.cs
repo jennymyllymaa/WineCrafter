@@ -7,7 +7,7 @@ namespace WineCrafter
     public class Spawner : MonoBehaviour
     {
         [SerializeField] private GameObject[] fallingObjects;
-        // poistoon jos kaikki ok private BoxCollider2D col;
+
         private float x1, x2;
         private float minSpawnDelayStart = 0.5f; // minimum time between spawns
         private float minSpawnDelayEnd = 0.1f;
@@ -19,32 +19,18 @@ namespace WineCrafter
         void Awake()
         {
 
-             // poistoon jos kaikki ok
-             // col = GetComponent<BoxCollider2D>();
             cam = Camera.main;
 
-            // Poistoon jos ongelmia spawnerissa ei testeissä ilmene
-            /* Vector2 bottomLeft = (Vector2)cam.ScreenToWorldPoint(new Vector3(0, 0, cam.nearClipPlane)); */
-
+            //set screen size as the size width of spawner for falling objects
             Vector2 topLeft = (Vector2)cam.ScreenToWorldPoint(new Vector3(100, cam.pixelHeight, cam.nearClipPlane));
             Vector2 topRight = (Vector2)cam.ScreenToWorldPoint(new Vector3(cam.pixelWidth - 100, cam.pixelHeight, cam.nearClipPlane));
 
             x1 = topLeft.x;
             x2 = topRight.x;
 
-            
-            
-            /*  Poistoon jos ongelmia ei ilmene
-            x1 = transform.position.x - col.bounds.size.x / 2f;
-            x2 = transform.position.x + col.bounds.size.x / 2f;
-            */
-
 
             //Initialize lastSpawnTime to the current time
             lastSpawnTime = Time.time;
-
-
-
 
         }
 

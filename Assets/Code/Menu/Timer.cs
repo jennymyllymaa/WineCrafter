@@ -24,7 +24,7 @@ public class Timer : MonoBehaviour
     int score;
 
     GameObject gameOverParent;
-    GameObject paneeli;
+    GameObject panel;
 
     public AudioSource ASChangeLevel;
 
@@ -65,16 +65,15 @@ public class Timer : MonoBehaviour
             {
                 if(score > 4)
                 {
-                    Debug.Log("score kunnossa");
                     gameOverParent = GameObject.Find("Canvas");
-                    paneeli = gameOverParent.transform.Find("EndPanel").gameObject;
-                    paneeli.SetActive(true);
+                    panel = gameOverParent.transform.Find("EndPanel").gameObject;
+                    panel.SetActive(true);
                 }
                 else
                 {
                     gameOverParent = GameObject.Find("Canvas");
-                    paneeli = gameOverParent.transform.Find("NEWGAMEOVERPANEL").gameObject;
-                    paneeli.SetActive(true);
+                    panel = gameOverParent.transform.Find("NEWGAMEOVERPANEL").gameObject;
+                    panel.SetActive(true);
                 }
             }
 
@@ -83,57 +82,18 @@ public class Timer : MonoBehaviour
                 if(score > 0 )
                 {
                     gameOverParent = GameObject.Find("Canvas");
-                    paneeli = gameOverParent.transform.Find("EndPanel").gameObject;
-                    paneeli.SetActive(true);
+                    panel = gameOverParent.transform.Find("EndPanel").gameObject;
+                    panel.SetActive(true);
                 }
                 else
                 {
                     gameOverParent = GameObject.Find("Canvas");
-                    paneeli = gameOverParent.transform.Find("NEWGAMEOVERPANEL").gameObject;
-                    paneeli.SetActive(true);
+                    panel = gameOverParent.transform.Find("NEWGAMEOVERPANEL").gameObject;
+                    panel.SetActive(true);
 
                 }
 
             }
-
-
-            /*if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Game1") && score > 0)
-            {
-                Debug.Log("score kunnossa");
-                gameOverParent = GameObject.Find("Canvas");
-                paneeli = gameOverParent.transform.Find("EndPanel").gameObject;
-                paneeli.SetActive(true);
-            }
-
-            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Game2") && score > 0)
-            {
-                gameOverParent = GameObject.Find("Canvas");
-                paneeli = gameOverParent.transform.Find("EndPanel").gameObject;
-                paneeli.SetActive(true);
-            }*/
-
-
-
-
-            /*if (score > 0)
-            {
-                gameOverParent = GameObject.Find("Canvas");
-                paneeli = gameOverParent.transform.Find("EndPanel").gameObject;
-                paneeli.SetActive(true);
-
-                /* ASChangeLevel.Play(); */ //tehdään tällekkin oma script todennäköisesti ja pois täältä.
-            /*}
-
-            else 
-            {
-                gameOverParent = GameObject.Find("Canvas");
-                paneeli = gameOverParent.transform.Find("NEWGAMEOVERPANEL").gameObject;
-                paneeli.SetActive(true);
-                
-                /* gameOver.Play();*/  //siirretty omaan scriptiin ja kiinnitetty game over paneeleihin.
-
-
-            /*}*/
 
             Time.timeScale = 0;
         }

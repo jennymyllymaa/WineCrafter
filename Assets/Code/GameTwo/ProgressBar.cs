@@ -14,18 +14,12 @@ namespace WineCrafter
         public Image mask;
 
 
-        // Start is called before the first frame update
-        void Start()
-        {
-
-        }
-
-        // Update is called once per frame
         void Update()
         {
             getCurrentFill();
         }
 
+        //Add points smoothly to the fillbar, give a point when fillbar reached full
         void getCurrentFill()
         {
             float fillAmount = (float)current / (float)maximum;
@@ -39,6 +33,7 @@ namespace WineCrafter
             }
         }
 
+        //add points to fillbar
         public void AddPointsFill()
         {
             current = current + 20;

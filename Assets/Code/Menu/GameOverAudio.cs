@@ -22,9 +22,8 @@ namespace WineCrafter
         {
             if (gameOverpanel.activeInHierarchy && !soundPlayed)
             {
-                soundPlayed= true;
+                soundPlayed = true;
                 gameOverAudio.Play();
-                Debug.Log("Gameoveraudio triggered");
             }
 
         }

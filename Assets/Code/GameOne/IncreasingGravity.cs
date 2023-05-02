@@ -43,7 +43,6 @@ namespace WineCrafter
             if (scoremanager.GetTrainingWheels() == true)
             {
                 scoremanager.SetTrainingWheelsToFalse();
-                Debug.Log("Training wheels off!");
             }
             gravityScale = gravityScale * gravityMultiplier;
 

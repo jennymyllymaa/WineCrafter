@@ -14,11 +14,7 @@ namespace WineCrafter
             coll = GetComponent<BoxCollider2D>();
         }
 
-        // Update is called once per frame
-        void FixedUpdate()
-        {
-
-        }
+        // Destroy bottle gameObjects when they reach despawner.
         public void OnTriggerEnter2D(Collider2D collision)
         {
             if (collision.gameObject.tag == "EmptyBottle")
