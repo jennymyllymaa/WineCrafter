@@ -303,6 +303,7 @@ GameObject:
   - component: {fileID: 1359218670454879902}
   - component: {fileID: 7020306282599002886}
   - component: {fileID: 4992089871079193441}
+  - component: {fileID: 8887822290258611984}
   m_Layer: 5
   m_Name: CreditsMenu
   m_TagString: Untagged
@@ -370,6 +371,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8887822290258611984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2276950779007533388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 327f15e75d1dbc7448c596ab92e7f503, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameWebsiteEn: https://webpages.tuni.fi/22tiko3c/en.html
+  gameWebsiteFi: https://webpages.tuni.fi/22tiko3c/
 --- !u!1 &2882870480483505978
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,6 +398,7 @@ GameObject:
   - component: {fileID: 3189388236496742907}
   - component: {fileID: 2300043899595149089}
   - component: {fileID: 4133831534057831950}
+  - component: {fileID: 33024568910033742}
   m_Layer: 5
   m_Name: TeiskonWineryLinks
   m_TagString: Untagged
@@ -507,6 +523,62 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &33024568910033742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2882870480483505978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 3189388236496742907}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8887822290258611984}
+        m_TargetAssemblyTypeName: WineCrafter.OpenLinks, Assembly-CSharp
+        m_MethodName: OpenURL
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: https://www.teiskonviini.fi/en/home/
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4628046036481654903
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,6 +668,7 @@ GameObject:
   - component: {fileID: 7611066699826562710}
   - component: {fileID: 4395571216614572595}
   - component: {fileID: 2638540970665142203}
+  - component: {fileID: 3374290810456100943}
   m_Layer: 5
   m_Name: MakersLinks
   m_TagString: Untagged
@@ -664,7 +737,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: 'https://webpages.tuni.fi/22tiko3c/index.html '
+  m_Text: https://webpages.tuni.fi/22tiko3c/en.html
 --- !u!114 &4395571216614572595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -720,6 +793,62 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &3374290810456100943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4658846063464228121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 7611066699826562710}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8887822290258611984}
+        m_TargetAssemblyTypeName: WineCrafter.OpenLinks, Assembly-CSharp
+        m_MethodName: OpenURL
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: https://webpages.tuni.fi/22tiko3c/en.html
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5079093722862849793
 GameObject:
   m_ObjectHideFlags: 0
@@ -1262,10 +1391,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: "Project Team / @manseplaygrounds \r\n\r\nJonna Kyll\xF6nen - Scrum master
-    \r\n\r\nNoora Vainionp\xE4\xE4 - Programmer \r\n\r\nJenny Myllymaa \u2013 Programmer
-    \r\n\r\nMatias Lepp\xE4nen - Graphic designer \r\n\r\nVera Vuorio \u2013 Graphic
-    designer\n\n"
+  m_Text: "Project Team / @manseplaygrounds\n\r\nJonna Kyll\xF6nen - Scrum master\n\r\nNoora
+    Vainionp\xE4\xE4 - Programmer\n\r\nJenny Myllymaa \u2013 Programmer\n\r\nMatias
+    Lepp\xE4nen - Graphic designer\n\r\nVera Vuorio \u2013 Graphic designer\n\n"
 --- !u!114 &8303190227747992497
 MonoBehaviour:
   m_ObjectHideFlags: 0

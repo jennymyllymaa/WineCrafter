@@ -12,8 +12,6 @@ namespace WineCrafter
         public Button englishButton;
         public Button finnishButton;
 
-        
-
         void Start()
         {   
             if(PlayerPrefs.GetString("firsttime", "true") == "true" )
