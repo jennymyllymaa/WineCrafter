@@ -1,6 +1,9 @@
+using System.Buffers.Text;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
+using Unity.Burst.Intrinsics;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -33,6 +36,7 @@ public class Timer : MonoBehaviour
 
     private void Start()
     {
+        // If we are in Game2, set the current time to half of the players current score.
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Game2"))
         {
             
@@ -57,10 +61,12 @@ public class Timer : MonoBehaviour
 
         SetTimerText();
 
+        // If the current time is equal to the timer limit, end the game.
         if (currentTime == timerLimit)
         {
             endOfGame = true;
 
+            // If we are in Game1, show the right panel based on the players score.
             if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Game1"))
             {
                 if(score > 4)
@@ -77,6 +83,7 @@ public class Timer : MonoBehaviour
                 }
             }
 
+            // If we are in Game2, show the right panel based on the players score.
             if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Game2"))
             {
                 if(score > 0 )

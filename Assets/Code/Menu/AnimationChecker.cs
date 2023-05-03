@@ -13,7 +13,7 @@ namespace WineCrafter
             animator = GetComponent<Animator>();
         }
 
-        //Play animation only if game if not paused
+        //Play animation only if game is not paused
         private void Update()
         {
             if (Time.timeScale == 0f)

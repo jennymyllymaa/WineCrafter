@@ -18,7 +18,7 @@ namespace WineCrafter
 
         private IEnumerator DeactivatePanelWithAnimation()
         {
-            // Get reference to the Animator component on  UI panel
+            // Get reference to the Animator component on UI panel
             Animator animator = myPanel.GetComponent<Animator>();
 
 

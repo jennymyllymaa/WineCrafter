@@ -1,5 +1,51 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &201128556563901634
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5265577917274823542}
+  - component: {fileID: 7401798417595667416}
+  m_Layer: 5
+  m_Name: TeiskonWineryLinks (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &5265577917274823542
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201128556563901634}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.038759694, y: 0.038759694, z: 0.038759694}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2110175956475710636}
+  m_Father: {fileID: 3299604654738466564}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1161.8733, y: 366.15115}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &7401798417595667416
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201128556563901634}
+  m_CullTransparentMesh: 1
 --- !u!1 &576814813527516633
 GameObject:
   m_ObjectHideFlags: 0
@@ -158,9 +204,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: The game is part of the game project of Tampere University of Applied Sciences' 
-    Degree Programme in Business Information Systems. The project was made in cooperation
-    with the VIRMA project.
+  m_Text: "Peli on osa Tampereen ammattikorkeakoulun tietojenk\xE4sittelyn tutkinto-ohjelman
+    peliprojektia. Projekti on tehty yhteisty\xF6ss\xE4 VIRMA \u2013hankkeen kanssa."
 --- !u!114 &7669492161280083362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -385,6 +430,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameWebsiteEn: https://webpages.tuni.fi/22tiko3c/en.html
   gameWebsiteFi: https://webpages.tuni.fi/22tiko3c/
+  wineryWebsiteEn: 
+  wineryWebsiteFi: 
 --- !u!1 &2882870480483505978
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,16 +462,16 @@ RectTransform:
   m_GameObject: {fileID: 2882870480483505978}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.038759694, y: 0.038759694, z: 0.038759694}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3299604654738466564}
-  m_RootOrder: 2
+  m_Father: {fileID: 5265577917274823542}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1161.8733, y: 366.15115}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 580.93665, y: -76.42523}
+  m_SizeDelta: {x: 1161.9, y: 152.8417}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1400474090738772627
 CanvasRenderer:
@@ -467,7 +514,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: 'https://www.teiskonviini.fi/en/home/ '
+  m_Text: 'https://www.teiskonviini.fi/ '
 --- !u!114 &2300043899595149089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -475,7 +522,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2882870480483505978}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
   m_Name: 
@@ -577,6 +624,200 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: https://www.teiskonviini.fi/en/home/
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &4044362754620474698
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4024114754283823475}
+  - component: {fileID: 6617741194113596840}
+  - component: {fileID: 3535081685277030459}
+  - component: {fileID: 5355895909320352620}
+  - component: {fileID: 2438211008325847839}
+  - component: {fileID: 4252537506785432283}
+  m_Layer: 5
+  m_Name: MakersLinks (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &4024114754283823475
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4044362754620474698}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1969621648284671493}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.0011902, y: 107.5146}
+  m_SizeDelta: {x: 1191.5, y: 151.1289}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &6617741194113596840
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4044362754620474698}
+  m_CullTransparentMesh: 1
+--- !u!114 &3535081685277030459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4044362754620474698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8867924, g: 0.46332824, b: 0.2300641, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 90
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 130
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1.2
+  m_Text: https://webpages.tuni.fi/22tiko3c/
+--- !u!114 &5355895909320352620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4044362754620474698}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 5, y: -3}
+  m_UseGraphicAlpha: 1
+--- !u!114 &2438211008325847839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4044362754620474698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:9074d0cad90244043bc40cfb7aaeaa3f
+    m_TableEntryReference:
+      m_KeyId: 5419559627698176
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3535081685277030459}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &4252537506785432283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4044362754620474698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 3535081685277030459}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8887822290258611984}
+        m_TargetAssemblyTypeName: WineCrafter.OpenLinks, Assembly-CSharp
+        m_MethodName: OpenGameURL
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: https://webpages.tuni.fi/22tiko3c/en.html
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &4628046036481654903
@@ -687,7 +928,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.038759694, y: 0.038759694, z: 0.038759694}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 4024114754283823475}
   m_Father: {fileID: 3299604654738466564}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -737,7 +979,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: https://webpages.tuni.fi/22tiko3c/en.html
+  m_Text: https://webpages.tuni.fi/22tiko3c/
 --- !u!114 &4395571216614572595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -976,7 +1218,7 @@ RectTransform:
   m_Children:
   - {fileID: 9218327977345340349}
   - {fileID: 3083499233622875460}
-  - {fileID: 2110175956475710636}
+  - {fileID: 5265577917274823542}
   - {fileID: 9089610033809150174}
   - {fileID: 1969621648284671493}
   - {fileID: 2726219440622304037}
@@ -1251,10 +1493,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: "\nTeiskon Winery is a family business from Tampere, where wines are made
-    by hand from Finnish berries with over 20 years of experience. In Teiskon Winery\u2019s
-    wines, you can taste the natural, authentic flavors that are created from pure
-    Finnish ingredients."
+  m_Text: "\nTeiskon Viini on tamperelainen perheyritys, jossa valmistetaan viinej\xE4
+    k\xE4sity\xF6n\xE4 kotimaisista marjoista yli 20 vuoden kokemuksella. Teiskon
+    viineiss\xE4 maistuvat luonnolliset aidot maut, jotka syntyv\xE4t puhtaista kotimaisista
+    raaka-aineista. "
 --- !u!114 &8859667163782650147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1391,9 +1633,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: "Project Team / @manseplaygrounds\n\r\nJonna Kyll\xF6nen - Scrum master\n\r\nNoora
-    Vainionp\xE4\xE4 - Programmer\n\r\nJenny Myllymaa \u2013 Programmer\n\r\nMatias
-    Lepp\xE4nen - Graphic designer\n\r\nVera Vuorio \u2013 Graphic designer\n\n"
+  m_Text: "Projektitiimi / @manseplaygrounds\n\r\nJonna Kyll\xF6nen - Scrum master\n\r\nNoora
+    Vainionp\xE4\xE4 - Ohjelmoija\n\r\nJenny Myllymaa \u2013 Ohjelmoija\n\r\nMatias
+    Lepp\xE4nen - Graafikko\n\r\nVera Vuorio \u2013 Graafikko\n\n"
 --- !u!114 &8303190227747992497
 MonoBehaviour:
   m_ObjectHideFlags: 0

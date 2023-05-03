@@ -10,14 +10,13 @@ namespace WineCrafter
         public GameObject gameOverpanel;
         bool soundPlayed = false;
 
-        // Start is called before the first frame update
         void Start()
         {
             gameOverAudio = GetComponent<AudioSource>();
 
         }
 
-        // Update is called once per frame
+        // play gameover sound if gameover panel is triggered
         void Update()
         {
             if (gameOverpanel.activeInHierarchy && !soundPlayed)

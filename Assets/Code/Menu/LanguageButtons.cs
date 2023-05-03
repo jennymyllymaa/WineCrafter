@@ -12,6 +12,8 @@ namespace WineCrafter
         public Button englishButton;
         public Button finnishButton;
 
+        
+        // sets default language to english if playing for the first time.
         void Start()
         {   
             if(PlayerPrefs.GetString("firsttime", "true") == "true" )

@@ -8,6 +8,7 @@ namespace WineCrafter
     {
         private void Awake()
         {
+            //Make music continue without stopping
             GameObject[] musicObj = GameObject.FindGameObjectsWithTag("Music");
             if (musicObj.Length > 1 ) 
             {

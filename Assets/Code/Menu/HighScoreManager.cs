@@ -36,11 +36,11 @@ namespace WineCrafter
 
         }
 
+        //resets high score and sets high score text to zero in highscore panel
         public void ResetHighScore()
         {
             PlayerPrefs.SetInt("personalHighScore", 0);
 
-            // Muutettu niin että resetattu highscore tulee heti näkyviin menu paneeliin
             highScoreNumber = 0;
             highScore.text = highScoreNumber.ToString();
         }

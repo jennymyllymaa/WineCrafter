@@ -14,11 +14,6 @@ namespace WineCrafter
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
-        // method to go back one scene
-        public void GoBack()
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
-        }
 
         //method to go back to main menu scene
         public void GoBackMenu()

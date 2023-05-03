@@ -6,10 +6,7 @@ using UnityEngine.InputSystem;
 namespace WineCrafter
 {
     public class InputReader : MonoBehaviour
-    {
-
-        private const float targetoffset = 0.01f;
-        // probably wont need this just now 
+    { 
 
         private Vector3 worldTouchPosition;
         private Vector3 direction;
