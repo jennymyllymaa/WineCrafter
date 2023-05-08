@@ -13,14 +13,17 @@ namespace WineCrafter
         public Button finnishButton;
 
         
-        // sets default language to english if playing for the first time.
+        //Sets default language to english if playing for the first time.
         void Start()
-        {   
-            if(PlayerPrefs.GetString("firsttime", "true") == "true" )
+        {
+
+            //Had to make a bool check for the default language.
+            //For some reason only having PlayerPrefs.SetString("languageKey", "en")
+            // doesn't set english as a default when you load the build in a phone. 
+            if (PlayerPrefs.GetString("firsttime", "true") == "true" )
             {
                 PlayerPrefs.SetString("languageKey", "en");
                 PlayerPrefs.SetString("firsttime", "false");
-
             }
 
             string savedLanguage = PlayerPrefs.GetString("languageKey", "en");
@@ -41,6 +44,7 @@ namespace WineCrafter
 
 
         }
+
 
         void SetLocale(string localeCode)
         {

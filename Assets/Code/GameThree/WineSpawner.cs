@@ -82,10 +82,10 @@ namespace WineCrafter
 
 
         // alla olevaa ei käytetä ollenkaan, poista jos ei tule käyttöä
-        public int GetAmount()
+        /*public int GetAmount()
         {
             return amountOfTries;
-        }
+        }*/
 
         //ui text method to show how many tries are left. Will probably be moved to a different script
         public void SubtractTries()

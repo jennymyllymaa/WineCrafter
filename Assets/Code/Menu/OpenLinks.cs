@@ -6,17 +6,17 @@ namespace WineCrafter
 {
     public class OpenLinks : MonoBehaviour
     {
-        //Linkit pelin nettisivulle
+        //Links fot he game website
         public string gameWebsiteEn;
         public string gameWebsiteFi;
 
-        //Linkit Teiskon Viinin nettisivulle
+        //Links for Teiskon Viini
         public string wineryWebsiteEn;
         public string wineryWebsiteFi;
 
         public void OpenGameURL()
         {
-            //Tarkistetaan kieli ennen linkin avaamista, default englanti
+            //Check the language before opening, default english
             if (PlayerPrefs.GetString("languageKey", "en") == "en")
             {
                 Application.OpenURL(gameWebsiteEn);

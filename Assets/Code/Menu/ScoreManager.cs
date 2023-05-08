@@ -21,7 +21,7 @@ namespace WineCrafter
 
         private int subractablePoint = 1;
 
-        //Kakkospelin pisteääntä varten
+        //For the second games bar
         public AudioSource barSound;
 
         private void Awake()
@@ -38,13 +38,14 @@ namespace WineCrafter
                 timer = GameObject.Find("TimerManager").GetComponent<Timer>();
             }
 
-            /*Scenen alussa muutetaan pisteet resursseiks ja nollataan pisteet ja sen playerpref*/
+            //At the start of a scene convert points into resources and set points and playerpref to zero
+            //Each scene has a bit of variaty in how the points convert
+
             if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Game2"))
             {
                 LoadPoints();
                 resourcePoints = score / 2;
                 score = 0;
-
             }
 
             if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Game3"))
@@ -52,8 +53,6 @@ namespace WineCrafter
                 LoadPoints();
                 resourcePoints = score;
                 score = 0;
-
-                
             }
 
             if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Score"))
@@ -68,24 +67,23 @@ namespace WineCrafter
 
         private void Update()
         {
-           
             SavePoints();
-
         }
 
 
         public void AddPoint ()
         {
             score += 1;
-
-            
+           
             PlayerPrefs.SetInt("currentGameScore", score);
 
+            //In the first game points also affect timer
             if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Game1"))
             {
                 timer.AddSecond();
             }
 
+            //In the second game a sound for the filled bar
             if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Game2"))
             {
                 barSound.Play();
@@ -103,13 +101,13 @@ namespace WineCrafter
             
             PlayerPrefs.SetInt("currentGameScore", score);
 
+            //In the first game points also affect timer
             if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Game1"))
             {
                 timer.SubtractSecond(subractablePoint);
             }
 
             scoreText.text = "x " + score.ToString();
-
 
         }
 
@@ -119,19 +117,16 @@ namespace WineCrafter
             PlayerPrefs.Save();
         }
 
-        /*UUSI*/
         public void LoadPoints()
         {
             score = PlayerPrefs.GetInt("currentGameScore", 0);
         }
 
-        /*UUSI*/
         public static void ResetPoints()
         {
             PlayerPrefs.SetInt("currentGameScore", 0);
         }
 
-        /*UUSI*/
         public int GetResourcePoints()
         {
             return resourcePoints;
@@ -147,7 +142,9 @@ namespace WineCrafter
             return score;
         }
 
-        //TrainingWheels ykköspeliin:
+        //TrainingWheels bool for the first game:
+        //So that the game is easier for the first 10 seconds
+        // to ensure that the game doesnt end immediately.
 
         public bool GetTrainingWheels()
         {

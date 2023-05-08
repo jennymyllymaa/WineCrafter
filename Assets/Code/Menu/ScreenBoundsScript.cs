@@ -6,6 +6,10 @@ namespace WineCrafter
 {
     public class ScreenBoundsScript : MonoBehaviour
     {
+
+        //Script for the first game so that the basket doesnt go over
+        // the screen boundaries.
+
         void Awake()
         {
             AddCollider();

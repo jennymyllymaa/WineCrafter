@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class PauseManager : MonoBehaviour
 {
-    // at the start check if the first game is the active scene and set game to pause 
+    //At the start check if the first game is the active scene and set game to pause 
+    // because the first game is the only game that starts with a panel active.
     void Start()
     {
         
@@ -29,7 +30,7 @@ public class PauseManager : MonoBehaviour
         Time.timeScale = 0f;
     }
 
-    //method that will resume the game
+    //Method that will resume the game
     public void Resume()
     {
         Time.timeScale = 1f;

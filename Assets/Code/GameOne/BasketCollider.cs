@@ -19,7 +19,7 @@ namespace WineCrafter
         }
 
 
-        //method that checks if falling objects hit the basket. Gives points if collided with berries, deducts points if collided with trash
+        //Method that checks if falling objects hit the basket. Gives points if collided with berries, deducts points if collided with trash
         public void OnTriggerEnter2D(Collider2D collision)
         {
             if (collision.gameObject.tag == "Marjat")

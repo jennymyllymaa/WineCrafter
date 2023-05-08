@@ -698,7 +698,6 @@ GameObject:
   - component: {fileID: 596865003}
   - component: {fileID: 596865002}
   - component: {fileID: 596865008}
-  - component: {fileID: 596865009}
   - component: {fileID: 596865007}
   - component: {fileID: 596865010}
   m_Layer: 5
@@ -824,18 +823,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   englishButton: {fileID: 1891426827}
   finnishButton: {fileID: 1971958977}
---- !u!114 &596865009
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 596865001}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b23c2aa5f47732479df6a7a9a310971, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &596865010
 MonoBehaviour:
   m_ObjectHideFlags: 0

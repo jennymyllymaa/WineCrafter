@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 5514699798783840635}
   - component: {fileID: 5514699798783840627}
   - component: {fileID: 5514699798783840626}
-  - component: {fileID: 6201367134399269986}
   m_Layer: 0
   m_Name: BasketTesti
   m_TagString: Untagged
@@ -364,18 +363,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &6201367134399269986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5514699798783840634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f1201bb380566e4d897ca61a0813da5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5514699798909326386
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,7 +372,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5514699798909326387}
-  - component: {fileID: 2202543697435602491}
   - component: {fileID: 5514699798909326384}
   m_Layer: 0
   m_Name: BasketFrontWithLogoDark
@@ -410,18 +396,6 @@ Transform:
   m_Father: {fileID: 5514699798783840629}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2202543697435602491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5514699798909326386}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f1201bb380566e4d897ca61a0813da5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &5514699798909326384
 SpriteRenderer:
   m_ObjectHideFlags: 0
