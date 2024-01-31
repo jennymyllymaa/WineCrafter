@@ -1,2 +1,4 @@
 # WineCrafter
-Mobile game for school project
+Mobile game for Teiskon Viini. Available in Google Play Store.
+
+Produced as a school project. 
